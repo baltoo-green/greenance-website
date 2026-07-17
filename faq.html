@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FAQ — Greenance</title>
+<title>FAQ Greenance — Vos questions fréquentes répondues</title>
 <meta name="description" content="Questions fréquentes sur Greenance : méthode de scoring du risque nature, sources de données, sécurité des données et intégration en comité de crédit.">
 <script src="./support.js"></script>
 <script>
@@ -152,6 +152,7 @@ class Component extends DCLogic {
   T = {
     fr: {
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", demoCta:"Réserver une démo",
+      pageTitle:"FAQ Greenance — Vos questions fréquentes répondues",
       faqEyebrow:"FAQ", faqTitle:"Questions fréquentes",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
       footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
@@ -171,6 +172,7 @@ class Component extends DCLogic {
     },
     en: {
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", demoCta:"Book a demo",
+      pageTitle:"Greenance FAQ — Your Questions Answered",
       faqEyebrow:"FAQ", faqTitle:"Frequently asked questions",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
       footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footAbout:"About", footPrivacy:"Privacy policy",
@@ -233,6 +235,7 @@ class Component extends DCLogic {
   applyStatic(l) {
     this.state.lang = l;
     const dict = this.T[l]; if (!dict) return;
+    document.title = dict.pageTitle;
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const k = el.getAttribute('data-i18n');
       if (dict[k] != null) el.textContent = dict[k];
