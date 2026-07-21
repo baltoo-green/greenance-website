@@ -56,6 +56,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
           <li><a class="navlink" href="index.html#apropos" data-i18n="navAbout">À propos</a></li>
           <li><a class="navlink" href="methodologie.html" data-i18n="navMethod">Méthodologie</a></li>
           <li><a class="navlink" href="faq.html" data-i18n="navFaq">FAQ</a></li>
+          <li><a class="navlink" href="ressources.html" data-i18n="navResources">Ressources</a></li>
         </ul>
         <div style="display:flex;align-items:center;gap:18px;">
           <div style="display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;">
@@ -74,6 +75,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
       <a class="navlink" href="index.html#apropos" style="padding:12px 0;" data-i18n="navAbout">À propos</a>
       <a class="navlink" href="methodologie.html" style="padding:12px 0;" data-i18n="navMethod">Méthodologie</a>
       <a class="navlink" href="faq.html" style="padding:12px 0;" data-i18n="navFaq">FAQ</a>
+      <a class="navlink" href="ressources.html" style="padding:12px 0;" data-i18n="navResources">Ressources</a>
       <div style="display:flex;align-items:center;gap:8px;padding:12px 0;font-size:14px;font-weight:600;">
         <span data-setlang="fr" style="cursor:pointer;">FR</span><span style="color:#D1D5DB;">/</span><span data-setlang="en" style="cursor:pointer;color:#9CA3AF;">EN</span>
       </div>
@@ -132,6 +134,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <a class="navlink" href="index.html#plateforme" style="color:#D7DCD8;font-size:14px;" data-i18n="footPlatform">Plateforme</a>
         <a class="navlink" href="methodologie.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footMethod">Méthodologie</a>
         <a class="navlink" href="faq.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footFaq">FAQ</a>
+        <a class="navlink" href="ressources.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footResources">Ressources</a>
         <a class="navlink" href="index.html#apropos" style="color:#D7DCD8;font-size:14px;" data-i18n="footAbout">À propos</a>
         <a class="navlink" href="#" style="color:#D7DCD8;font-size:14px;" data-i18n="footPrivacy">Politique de confidentialité</a>
       </div>
@@ -152,11 +155,11 @@ class Component extends DCLogic {
 
   T = {
     fr: {
-      navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", demoCta:"Réserver une démo",
+      navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources", demoCta:"Réserver une démo",
       pageTitle:"FAQ Greenance — Vos questions fréquentes répondues",
       faqEyebrow:"FAQ", faqTitle:"Questions fréquentes",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
-      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
+      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
       footRights:"© 2026 Greenance SAS. Tous droits réservés.",
       qa: [
         ["Qu'est-ce que Greenance ?","Greenance est une plateforme qui évalue le risque nature au niveau du site industriel, et non du siège social. À partir du nom d'une entreprise, elle identifie ses actifs, les géolocalise, et produit un score de vulnérabilité nature sur trois piliers : eau, sols, biodiversité."],
@@ -172,11 +175,11 @@ class Component extends DCLogic {
       ]
     },
     en: {
-      navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", demoCta:"Book a demo",
+      navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources", demoCta:"Book a demo",
       pageTitle:"Greenance FAQ — Your Questions Answered",
       faqEyebrow:"FAQ", faqTitle:"Frequently asked questions",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
-      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footAbout:"About", footPrivacy:"Privacy policy",
+      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy",
       footRights:"© 2026 Greenance SAS. All rights reserved.",
       qa: [
         ["What is Greenance?","Greenance is a platform that assesses nature risk at the industrial site level, not at headquarters. From a company name, it identifies its assets, geolocates them, and produces a nature vulnerability score across three pillars: water, soil, biodiversity."],

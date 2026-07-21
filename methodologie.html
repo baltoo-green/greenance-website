@@ -57,6 +57,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
           <li><a class="navlink" href="index.html#pourquoi" data-i18n="navWhy">Pourquoi Greenance</a></li>
           <li><a class="navlink" href="index.html#apropos" data-i18n="navAbout">À propos</a></li>
           <li><a class="navlink" href="faq.html" data-i18n="navFaq">FAQ</a></li>
+          <li><a class="navlink" href="ressources.html" data-i18n="navResources">Ressources</a></li>
         </ul>
         <div style="display:flex;align-items:center;gap:18px;">
           <div style="display:flex;align-items:center;gap:7px;font-size:14px;font-weight:600;">
@@ -74,6 +75,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
       <a class="navlink" href="index.html#pourquoi" style="padding:12px 0;" data-i18n="navWhy">Pourquoi Greenance</a>
       <a class="navlink" href="index.html#apropos" style="padding:12px 0;" data-i18n="navAbout">À propos</a>
       <a class="navlink" href="faq.html" style="padding:12px 0;" data-i18n="navFaq">FAQ</a>
+      <a class="navlink" href="ressources.html" style="padding:12px 0;" data-i18n="navResources">Ressources</a>
       <div style="display:flex;align-items:center;gap:8px;padding:12px 0;font-size:14px;font-weight:600;">
         <span data-setlang="fr" style="cursor:pointer;">FR</span><span style="color:#D1D5DB;">/</span><span data-setlang="en" style="cursor:pointer;color:#9CA3AF;">EN</span>
       </div>
@@ -261,6 +263,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <a class="navlink" href="index.html#plateforme" style="color:#D7DCD8;font-size:14px;" data-i18n="footPlatform">Plateforme</a>
         <a class="navlink" href="methodologie.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footMethod">Méthodologie</a>
         <a class="navlink" href="faq.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footFaq">FAQ</a>
+        <a class="navlink" href="ressources.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footResources">Ressources</a>
         <a class="navlink" href="index.html#apropos" style="color:#D7DCD8;font-size:14px;" data-i18n="footAbout">À propos</a>
         <a class="navlink" href="#" style="color:#D7DCD8;font-size:14px;" data-i18n="footPrivacy">Politique de confidentialité</a>
       </div>
@@ -279,7 +282,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
 class Component extends DCLogic {
   T = {
     fr: {
-      navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navFaq:"FAQ", demoCta:"Réserver une démo",
+      navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navFaq:"FAQ", navResources:"Ressources", demoCta:"Réserver une démo",
       pageTitle:"Méthodologie du risque nature — Greenance",
       mEyebrow:"Méthode", mHeroTitle:"Méthodologie", mHeroSub:"Comment Greenance mesure le risque nature",
       mIntro:"Un score de risque nature n'a de valeur que s'il peut être défendu devant un comité de crédit. Chez Greenance, chaque donnée affichée est traçable jusqu'à sa source, chaque calcul est déterministe et reproductible. Pas de boîte noire, pas de score généré par une IA opaque : une méthode documentée, calibrée avec des professionnels du secteur bancaire, et alignée sur les cadres de référence internationaux.",
@@ -306,11 +309,11 @@ class Component extends DCLogic {
       regBody1:"La méthodologie est construite pour répondre aux attentes de supervision de la BCE et du Mécanisme de Surveillance Unique sur le risque physique, ainsi qu'aux lignes directrices EBA/GL/2025/01 sur la gestion des risques ESG. TNFD/LEAP et ENCORE en sont les cadres méthodologiques de référence.",
       regBody2:"Chaque choix méthodologique a été calibré avec plus de 50 professionnels de banques européennes, et validé par un travail de backtesting sur des incidents réels, plutôt que par la seule accumulation de couches de données.",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
-      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
+      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
     },
     en: {
-      navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navFaq:"FAQ", demoCta:"Book a demo",
+      navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navFaq:"FAQ", navResources:"Resources", demoCta:"Book a demo",
       pageTitle:"Nature Risk Methodology — Greenance",
       mEyebrow:"Method", mHeroTitle:"Methodology", mHeroSub:"How Greenance measures nature risk",
       mIntro:"A nature risk score is only as good as its defensibility in front of a credit committee. At Greenance, every data point is traceable to its source, and every calculation is deterministic and reproducible. No black box, no score generated by an opaque AI: a documented method, calibrated with banking professionals, and aligned with international reference frameworks.",
@@ -337,7 +340,7 @@ class Component extends DCLogic {
       regBody1:"The methodology is built to meet the supervisory expectations of the ECB and the Single Supervisory Mechanism on physical risk, as well as the EBA/GL/2025/01 guidelines on ESG risk management. TNFD/LEAP and ENCORE serve as the methodological reference frameworks.",
       regBody2:"Every methodological choice was calibrated with 50+ professionals from European banks, and validated through backtesting against real incidents, rather than through the sole accumulation of data layers.",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
-      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footAbout:"About", footPrivacy:"Privacy policy",
+      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy",
       footRights:"© 2026 Greenance SAS. All rights reserved."
     }
   };
