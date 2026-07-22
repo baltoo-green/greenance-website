@@ -89,7 +89,8 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
           <span data-i18n="resEyebrow" style="font-size:12.5px;font-weight:600;letter-spacing:0.02em;color:#41805A;">Ressources</span>
         </div>
         <h1 data-i18n="resTitle" style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(38px,6vw,62px);line-height:1.05;letter-spacing:-0.025em;margin:0 0 20px;text-wrap:balance;">Ressources</h1>
-        <p data-i18n="resSub" style="font-size:clamp(17px,1.9vw,20px);line-height:1.6;color:#6B7280;margin:0 auto;max-width:640px;text-wrap:pretty;">Analyses de fond sur la réglementation, les cadres de référence et la méthode derrière le risque nature. Pour une vue d'ensemble de notre approche, voir la page <a href="methodologie.html" style="color:#5A9E6F;font-weight:600;">Méthodologie</a>.</p>
+        <p data-i18n="resSub" style="font-size:clamp(17px,1.9vw,20px);line-height:1.6;color:#6B7280;margin:0 auto 14px;max-width:640px;text-wrap:pretty;">Le risque nature est un sujet récent pour beaucoup d'équipes crédit et risque, et la réglementation évolue vite : nouvelles priorités prudentielles de la BCE, nouvelles lignes directrices de l'EBA, montée en puissance de cadres comme la TNFD. Cette page rassemble nos analyses de fond sur ces sujets, pensées pour des analystes crédit, des équipes ESG et des directions des risques. Pour une vue d'ensemble de notre approche, voir la page <a href="methodologie.html" style="color:#5A9E6F;font-weight:600;">Méthodologie</a>.</p>
+        <p data-i18n="resSub2" style="font-size:15.5px;line-height:1.6;color:#9CA3AF;margin:0 auto;max-width:640px;text-wrap:pretty;">Chaque article ici va au-delà du résumé rapide : dates d'application exactes, textes réglementaires cités, sources primaires vérifiables.</p>
       </div>
     </div>
   </section>
@@ -99,12 +100,12 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
     <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:20px;">
       <a data-reveal="" class="rescard" href="reglementation-bce-2026.html" data-href-fr="reglementation-bce-2026.html" data-href-en="reglementation-bce-2026.html?lang=en">
         <h2 data-i18n="art1Title" style="font-family:'Fraunces',serif;font-weight:600;font-size:22px;line-height:1.25;margin:0 0 12px;color:#1A1A1A;">Réglementation BCE 2026 : risque nature et supervision bancaire</h2>
-        <p data-i18n="art1Body" style="font-size:15px;line-height:1.65;color:#6B7280;margin:0 0 18px;">Ce qui change avec les priorités prudentielles BCE 2026-2028 et les orientations EBA/GL/2025/01 : dates d'application, exigences concrètes, et ce que ça implique pour votre établissement.</p>
+        <p data-i18n="art1Body" style="font-size:15px;line-height:1.65;color:#6B7280;margin:0 0 18px;">Ce qui change avec les priorités prudentielles BCE 2026-2028 et les orientations EBA/GL/2025/01 : dates d'application, exigences concrètes sur la gestion des risques ESG, sanctions déjà appliquées, et ce que ça implique pour votre établissement en termes de granularité de données.</p>
         <span data-i18n="readArticle" style="font-size:14.5px;font-weight:600;color:#5A9E6F;">Lire l'article →</span>
       </a>
       <a data-reveal="" class="rescard" href="tnfd-leap.html" data-href-fr="tnfd-leap.html" data-href-en="tnfd-leap.html">
         <h2 data-i18n="art2Title" style="font-family:'Fraunces',serif;font-weight:600;font-size:22px;line-height:1.25;margin:0 0 12px;color:#1A1A1A;">TNFD et LEAP : le cadre de référence du risque nature</h2>
-        <p data-i18n="art2Body" style="font-size:15px;line-height:1.65;color:#6B7280;margin:0 0 18px;">Ce qu'est la TNFD, comment fonctionne l'approche LEAP, pourquoi l'analyse sectorielle ne suffit pas, et pourquoi ce cadre est désormais reconnu par l'EBA comme la référence pour les risques nature.</p>
+        <p data-i18n="art2Body" style="font-size:15px;line-height:1.65;color:#6B7280;margin:0 0 18px;">Ce qu'est la TNFD, en quoi elle diffère fondamentalement de la TCFD, comment fonctionne l'approche LEAP en quatre phases, pourquoi l'analyse sectorielle seule ne suffit pas, et pourquoi ce cadre est désormais reconnu par l'EBA comme la référence pour les risques liés à la nature.</p>
         <span data-i18n="readArticle" style="font-size:14.5px;font-weight:600;color:#5A9E6F;">Lire l'article →</span>
       </a>
     </div>
@@ -153,11 +154,12 @@ class Component extends DCLogic {
     fr: {
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources", demoCta:"Réserver une démo",
       resEyebrow:"Ressources", resTitle:"Ressources",
-      resSub:"Analyses de fond sur la réglementation, les cadres de référence et la méthode derrière le risque nature. Pour une vue d'ensemble de notre approche, voir la page Méthodologie.",
+      resSub:"Le risque nature est un sujet récent pour beaucoup d'équipes crédit et risque, et la réglementation évolue vite : nouvelles priorités prudentielles de la BCE, nouvelles lignes directrices de l'EBA, montée en puissance de cadres comme la TNFD. Cette page rassemble nos analyses de fond sur ces sujets, pensées pour des analystes crédit, des équipes ESG et des directions des risques.",
+      resSub2:"Chaque article ici va au-delà du résumé rapide : dates d'application exactes, textes réglementaires cités, sources primaires vérifiables.",
       art1Title:"Réglementation BCE 2026 : risque nature et supervision bancaire",
-      art1Body:"Ce qui change avec les priorités prudentielles BCE 2026-2028 et les orientations EBA/GL/2025/01 : dates d'application, exigences concrètes, et ce que ça implique pour votre établissement.",
+      art1Body:"Ce qui change avec les priorités prudentielles BCE 2026-2028 et les orientations EBA/GL/2025/01 : dates d'application, exigences concrètes sur la gestion des risques ESG, sanctions déjà appliquées, et ce que ça implique pour votre établissement en termes de granularité de données.",
       art2Title:"TNFD et LEAP : le cadre de référence du risque nature",
-      art2Body:"Ce qu'est la TNFD, comment fonctionne l'approche LEAP, pourquoi l'analyse sectorielle ne suffit pas — et pourquoi ce cadre est désormais reconnu par l'EBA comme la référence pour les risques nature.",
+      art2Body:"Ce qu'est la TNFD, en quoi elle diffère fondamentalement de la TCFD, comment fonctionne l'approche LEAP en quatre phases, pourquoi l'analyse sectorielle seule ne suffit pas, et pourquoi ce cadre est désormais reconnu par l'EBA comme la référence pour les risques liés à la nature.",
       readArticle:"Lire l'article →",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
       footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
@@ -166,11 +168,12 @@ class Component extends DCLogic {
     en: {
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources", demoCta:"Book a demo",
       resEyebrow:"Resources", resTitle:"Resources",
-      resSub:"In-depth analysis of regulation, reference frameworks, and the method behind nature risk. For an overview of our approach, see the Methodology page.",
+      resSub:"Nature risk is a recent topic for many credit and risk teams, and regulation is moving fast: new ECB supervisory priorities, new EBA guidelines, the rising importance of frameworks like the TNFD. This page brings together our in-depth analysis on these topics, written for credit analysts, ESG teams, and risk management functions.",
+      resSub2:"Each article here goes beyond the quick summary: exact application dates, cited regulatory texts, verifiable primary sources.",
       art1Title:"ECB 2026 Regulation: Nature Risk and Banking Supervision",
-      art1Body:"What's changing with the ECB's 2026-2028 supervisory priorities and the EBA/GL/2025/01 guidelines: application dates, concrete requirements, and what it means for your institution.",
+      art1Body:"What's changing with the ECB's 2026-2028 supervisory priorities and the EBA/GL/2025/01 guidelines: application dates, concrete requirements on ESG risk management, penalties already applied, and what it means for your institution in terms of data granularity.",
       art2Title:"TNFD and LEAP: the reference framework for nature risk",
-      art2Body:"What the TNFD is, how the LEAP approach works, why sector-level analysis is not enough — and why this framework is now recognised by the EBA as the reference standard for nature risk.",
+      art2Body:"What the TNFD is, how it fundamentally differs from the TCFD, how the four-phase LEAP approach works, why sector-level analysis alone is not enough, and why this framework is now recognised by the EBA as the reference standard for nature-related risks.",
       readArticle:"Read the article →",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
       footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy",
