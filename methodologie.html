@@ -188,6 +188,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         </div>
       </div>
       <p data-i18n="tnfdBody2" style="font-size:16.5px;line-height:1.75;color:#6B7280;margin:0;text-wrap:pretty;">Greenance s'appuie sur ce cadre pour structurer sa propre méthodologie, sans s'y substituer : TNFD/LEAP reste la référence conceptuelle, notre plateforme en est une implémentation opérationnelle appliquée au crédit bancaire.</p>
+      <a href="tnfd-leap.html" data-i18n="tnfdLink" style="display:inline-block;margin-top:16px;font-size:14.5px;font-weight:600;color:#5A9E6F;text-decoration:none;">En savoir plus sur TNFD et LEAP →</a>
     </div>
   </section>
 
@@ -199,6 +200,7 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <h2 data-i18n="encoreTitle" style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(26px,3.4vw,38px);line-height:1.14;letter-spacing:-0.02em;margin:0 0 22px;text-wrap:balance;">Les dépendances aux écosystèmes, secteur par secteur.</h2>
         <p data-i18n="encoreBody1" style="font-size:16.5px;line-height:1.75;color:#9DA49F;margin:0 0 18px;text-wrap:pretty;">ENCORE (Exploring Natural Capital Opportunities, Risks and Exposure) est une base de données publique qui documente, secteur par secteur, la dépendance des activités économiques aux services rendus par les écosystèmes : régulation de l'eau, pollinisation, protection contre l'érosion, entre autres.</p>
         <p data-i18n="encoreBody2" style="font-size:16.5px;line-height:1.75;color:#9DA49F;margin:0;text-wrap:pretty;">Les dépendances y sont exprimées sur une échelle qualitative, de très faible à très élevée. Greenance convertit cette échelle en valeurs numériques exploitables, et applique une règle de correspondance conservatrice lorsqu'un secteur peut être rattaché à plusieurs catégories : c'est toujours la dépendance la plus élevée qui est retenue, jamais une moyenne qui lisserait le signal.</p>
+        <a href="encore.html" data-i18n="encoreLink" style="display:inline-block;margin-top:16px;font-size:14.5px;font-weight:600;color:#3DDC84;text-decoration:none;">En savoir plus sur ENCORE →</a>
       </div>
     </div>
   </section>
@@ -232,7 +234,8 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;"><span style="width:22px;height:2px;background:#5A9E6F;"></span><span data-i18n="ebReg" style="font-size:13px;font-weight:600;letter-spacing:0.09em;text-transform:uppercase;color:#5A9E6F;">07 · Alignement réglementaire</span></div>
         <h2 data-i18n="regTitle" style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(26px,3.4vw,38px);line-height:1.14;letter-spacing:-0.02em;margin:0 0 22px;text-wrap:balance;">Construit pour la supervision bancaire.</h2>
         <p data-i18n="regBody1" style="font-size:16.5px;line-height:1.75;color:#6B7280;margin:0 0 18px;text-wrap:pretty;">La méthodologie est construite pour répondre aux attentes de supervision de la BCE et du Mécanisme de Surveillance Unique sur le risque physique, ainsi qu'aux lignes directrices EBA/GL/2025/01 sur la gestion des risques ESG. TNFD/LEAP et ENCORE en sont les cadres méthodologiques de référence.</p>
-        <p data-i18n="regBody2" style="font-size:16.5px;line-height:1.75;color:#6B7280;margin:0 0 28px;text-wrap:pretty;">Chaque choix méthodologique a été calibré avec plus de 50 professionnels de banques européennes, et validé par un travail de backtesting sur des incidents réels, plutôt que par la seule accumulation de couches de données.</p>
+        <p data-i18n="regBody2" style="font-size:16.5px;line-height:1.75;color:#6B7280;margin:0 0 16px;text-wrap:pretty;">Chaque choix méthodologique a été calibré avec plus de 50 professionnels de banques européennes, et validé par un travail de backtesting sur des incidents réels, plutôt que par la seule accumulation de couches de données.</p>
+        <a href="reglementation-bce-2026.html" data-i18n="regLink" style="display:inline-block;margin-bottom:20px;font-size:14.5px;font-weight:600;color:#5A9E6F;text-decoration:none;">En savoir plus sur la réglementation BCE 2026 →</a>
         <div data-reveal="" style="display:flex;gap:8px;flex-wrap:wrap;">
           <span style="font-size:12.5px;font-weight:500;color:#2F4A3A;background:#F1F6F2;border:1px solid #DCEADF;border-radius:9px;padding:8px 13px;">TNFD / LEAP</span>
           <span style="font-size:12.5px;font-weight:500;color:#2F4A3A;background:#F1F6F2;border:1px solid #DCEADF;border-radius:9px;padding:8px 13px;">ENCORE</span>
@@ -308,6 +311,7 @@ class Component extends DCLogic {
       ebBeyond:"06 · Au-delà du chiffre", beyondTitle:"Un chiffre seul ne fait pas une décision.",
       beyondBody:"Chaque résultat est accompagné d'une lecture qualitative, en langage clair : ce qui explique le score, ce que ça signifie concrètement pour ce site précis, et ce qui pourrait le faire évoluer. Que vous soyez expert du risque nature ou que vous lisiez votre premier rapport, vous disposez du même niveau de compréhension, et d'un élément que vous pouvez réellement mettre sur la table en comité de crédit, pas juste un chiffre à prendre pour argent comptant.",
       ebReg:"07 · Alignement réglementaire", regTitle:"Construit pour la supervision bancaire.",
+      tnfdLink:"En savoir plus sur TNFD et LEAP →", encoreLink:"En savoir plus sur ENCORE →", regLink:"En savoir plus sur la réglementation BCE 2026 →",
       regBody1:"La méthodologie est construite pour répondre aux attentes de supervision de la BCE et du Mécanisme de Surveillance Unique sur le risque physique, ainsi qu'aux lignes directrices EBA/GL/2025/01 sur la gestion des risques ESG. TNFD/LEAP et ENCORE en sont les cadres méthodologiques de référence.",
       regBody2:"Chaque choix méthodologique a été calibré avec plus de 50 professionnels de banques européennes, et validé par un travail de backtesting sur des incidents réels, plutôt que par la seule accumulation de couches de données.",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
@@ -338,6 +342,7 @@ class Component extends DCLogic {
       ebBeyond:"06 · Beyond the number", beyondTitle:"A score alone doesn't make a decision.",
       beyondBody:"Every result comes with a qualitative read, in plain language: what's driving the number, what it means in practice for that specific site, and what would change it. Whether you're a nature risk expert or reading your first report, you get the same depth of understanding, and something you can actually put on the table in a credit committee, not just a figure to take on faith.",
       ebReg:"07 · Regulatory alignment", regTitle:"Built for banking supervision.",
+      tnfdLink:"Learn more about TNFD and LEAP →", encoreLink:"Learn more about ENCORE →", regLink:"Learn more about the ECB 2026 regulation →",
       regBody1:"The methodology is built to meet the supervisory expectations of the ECB and the Single Supervisory Mechanism on physical risk, as well as the EBA/GL/2025/01 guidelines on ESG risk management. TNFD/LEAP and ENCORE serve as the methodological reference frameworks.",
       regBody2:"Every methodological choice was calibrated with 50+ professionals from European banks, and validated through backtesting against real incidents, rather than through the sole accumulation of data layers.",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
