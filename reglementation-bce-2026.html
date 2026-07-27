@@ -11,6 +11,17 @@
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Réglementation BCE 2026 : risque nature et supervision bancaire",
+  "author": {"@type": "Person", "name": "Balthazar Courtois"},
+  "datePublished": "2026-07-03",
+  "publisher": {"@type": "Organization", "name": "Greenance", "logo": {"@type": "ImageObject", "url": "https://greenance.fr/assets/logo-dark.png"}},
+  "mainEntityOfPage": "https://greenance.fr/reglementation-bce-2026.html"
+}
+</script>
 </head>
 <body>
 <x-dc>
@@ -88,7 +99,8 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <div style="display:inline-flex;align-items:center;gap:9px;padding:6px 13px;border:1px solid #DCEADF;background:#F4FAF6;border-radius:100px;margin-bottom:24px;">
           <span data-i18n="artEyebrow" style="font-size:12.5px;font-weight:600;letter-spacing:0.02em;color:#41805A;">Réglementation</span>
         </div>
-        <h1 data-i18n="artTitle" style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(32px,4.6vw,48px);line-height:1.1;letter-spacing:-0.02em;margin:0;text-wrap:balance;">Réglementation BCE 2026 : risque nature et supervision bancaire</h1>
+        <h1 data-i18n="artTitle" style="font-family:'Fraunces',serif;font-weight:600;font-size:clamp(32px,4.6vw,48px);line-height:1.1;letter-spacing:-0.02em;margin:0 0 16px;text-wrap:balance;">Réglementation BCE 2026 : risque nature et supervision bancaire</h1>
+        <p data-i18n="artByline" style="font-size:14px;color:#9CA3AF;margin:0;">Par Balthazar Courtois · 3 juillet 2026</p>
       </div>
     </div>
   </section>
@@ -143,8 +155,17 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <p data-i18n="briefBody" style="font-size:15.5px;line-height:1.7;color:#4B5563;margin:0;text-wrap:pretty;">BCE 2026-2028 : gestion prudente du risque climat et nature explicitement citée en priorité 1, avec inspections ciblées sur le risque physique. EBA/GL/2025/01 : applicable depuis le 11 janvier 2026 pour les grands établissements, horizon de gestion d'au moins 10 ans, sanctions déjà appliquées à 28 banques. Cadre TNFD : positionné par l'EBA comme l'équivalent de la TCFD pour la nature, le principe « location-based » formalise l'insuffisance de l'analyse sectorielle seule. La donnée doit être au niveau du site, documentée, et défendable devant un superviseur.</p>
       </div>
 
+      <div data-reveal="" style="margin-bottom:28px;">
+        <div data-i18n="seeAlsoLabel" style="font-size:12.5px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#5A9E6F;margin-bottom:12px;">Voir aussi</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a href="methodologie.html" style="font-size:14px;font-weight:600;color:#5A9E6F;text-decoration:none;">Méthodologie →</a>
+          <a href="tnfd-leap.html" style="font-size:14px;font-weight:600;color:#5A9E6F;text-decoration:none;">TNFD et LEAP →</a>
+          <a href="encore.html" style="font-size:14px;font-weight:600;color:#5A9E6F;text-decoration:none;">ENCORE →</a>
+        </div>
+      </div>
+
       <div data-reveal="">
-        <p data-i18n="sources" style="font-size:13px;line-height:1.6;color:#9CA3AF;margin:0;">Sources : Frank Elderson, MNI webcast "Impact on Monetary Policy and Bank Supervision", 12 février 2025 ; BCE, Priorités prudentielles 2026-2028, 18 novembre 2025 ; EBA/GL/2025/01, 8 janvier 2025 ; EBA/GL/2025/04, novembre 2025 ; TNFD LEAP Guidance v1.0, septembre 2023 (tnfd.global).</p>
+        <p data-i18n="sources" ...>
       </div>
 
     </div>
@@ -193,7 +214,7 @@ class Component extends DCLogic {
     fr: {
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources", demoCta:"Réserver une démo",
       pageTitle:"Réglementation BCE 2026 : risque nature, Greenance",
-      artEyebrow:"Réglementation", artTitle:"Réglementation BCE 2026 : risque nature et supervision bancaire",
+      artEyebrow:"Réglementation", artTitle:"Réglementation BCE 2026 : risque nature et supervision bancaire", artByline:"Par Balthazar Courtois · 3 juillet 2026",
       s1h:"Ce qui change en 2026",
       s1p1:"Deux textes fixent le cadre. D'un côté, les priorités prudentielles de la BCE pour 2026-2028, publiées le 18 novembre 2025. De l'autre, les lignes directrices EBA/GL/2025/01 sur la gestion des risques ESG, applicables depuis le 11 janvier 2026 pour les établissements autres que les petites structures non complexes (11 janvier 2027 pour ces dernières). Ensemble, ils transforment le risque nature d'un sujet de bonne volonté RSE en un sujet de conformité prudentielle, au même titre que le risque de crédit ou le risque de marché.",
       s1p2:"Comme le formule Frank Elderson, membre du directoire de la BCE, dans son discours du 12 février 2025 :",
@@ -219,6 +240,7 @@ class Component extends DCLogic {
       s6p3:"La contrainte réglementaire ne se négocie pas. La question n'est plus de savoir si le risque nature doit être mesuré, mais comment le mesurer au niveau où il se matérialise : le site.",
       briefLabel:"En bref",
       briefBody:"BCE 2026-2028 : gestion prudente du risque climat et nature explicitement citée en priorité 1, avec inspections ciblées sur le risque physique. EBA/GL/2025/01 : applicable depuis le 11 janvier 2026 pour les grands établissements, horizon de gestion d'au moins 10 ans, sanctions déjà appliquées à 28 banques. Cadre TNFD : positionné par l'EBA comme l'équivalent de la TCFD pour la nature, le principe « location-based » formalise l'insuffisance de l'analyse sectorielle seule. La donnée doit être au niveau du site, documentée, et défendable devant un superviseur.",
+      seeAlsoLabel:"Voir aussi",
       sources:"Sources : Frank Elderson, MNI webcast \"Impact on Monetary Policy and Bank Supervision\", 12 février 2025 ; BCE, Priorités prudentielles 2026-2028, 18 novembre 2025 ; EBA/GL/2025/01, 8 janvier 2025 ; EBA/GL/2025/04, novembre 2025 ; TNFD LEAP Guidance v1.0, septembre 2023 (tnfd.global).",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
       footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
@@ -227,7 +249,7 @@ class Component extends DCLogic {
     en: {
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources", demoCta:"Book a demo",
       pageTitle:"ECB 2026 Regulation: Nature Risk, Greenance",
-      artEyebrow:"Regulation", artTitle:"ECB 2026 Regulation: Nature Risk and Banking Supervision",
+      artEyebrow:"Regulation", artTitle:"ECB 2026 Regulation: Nature Risk and Banking Supervision", artByline:"By Balthazar Courtois · July 3, 2026",
       s1h:"What's changing in 2026",
       s1p1:"Two texts set the framework. First, the ECB's supervisory priorities for 2026-2028, published on 18 November 2025. Second, the EBA/GL/2025/01 guidelines on ESG risk management, applicable since 11 January 2026 for institutions other than small and non-complex ones (11 January 2027 for the latter). Together, they turn nature risk from a CSR goodwill topic into a prudential compliance matter, on par with credit risk or market risk.",
       s1p2:"As Frank Elderson, ECB Executive Board member, put it in his speech of 12 February 2025:",
@@ -253,6 +275,7 @@ class Component extends DCLogic {
       s6p3:"The regulatory constraint is not negotiable. The question is no longer whether nature risk must be measured, but how to measure it at the level where it materialises: the site.",
       briefLabel:"In brief",
       briefBody:"ECB 2026-2028: prudent management of climate and nature risk explicitly named in priority 1, with targeted inspections on physical risk. EBA/GL/2025/01: applicable since 11 January 2026 for large institutions, with a management horizon of at least 10 years, penalties already applied against 28 banks. TNFD framework: positioned by the EBA as the equivalent of TCFD for nature — the \"location-based\" principle formalises the insufficiency of sector-level analysis alone. Data must be at the site level, documented, and defensible in front of a supervisor.",
+      seeAlsoLabel:"See also",    
       sources:"Sources: Frank Elderson, MNI webcast \"Impact on Monetary Policy and Bank Supervision\", 12 February 2025; ECB, Supervisory Priorities 2026-2028, 18 November 2025; EBA/GL/2025/01, 8 January 2025; EBA/GL/2025/04, November 2025; TNFD LEAP Guidance v1.0, September 2023 (tnfd.global).",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
       footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy",
