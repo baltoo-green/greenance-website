@@ -346,7 +346,9 @@ class Component extends DCLogic {
   };
 
   componentDidMount() {
-    this.applyStatic(this.props.defaultLang === 'en' ? 'en' : 'fr');
+    let savedLang = null;
+    try { savedLang = localStorage.getItem('greenance_lang'); } catch (e) {}
+    this.applyStatic(savedLang === 'en' || savedLang === 'fr' ? savedLang : (this.props.defaultLang === 'en' ? 'en' : 'fr'));
     this.renderAccordion();
 
     const burger = document.getElementById('burger'), panel = document.getElementById('mobile-panel');
@@ -399,9 +401,10 @@ class Component extends DCLogic {
     try { document.documentElement.lang = l; } catch (e) {}
 
     const frBtn = document.getElementById('lang-fr'), enBtn = document.getElementById('lang-en');
-    if (frBtn && !frBtn.dataset.bound) { frBtn.dataset.bound = '1'; frBtn.addEventListener('click', () => { this.applyStatic('fr'); this.renderAccordion(); }); }
-    if (enBtn && !enBtn.dataset.bound) { enBtn.dataset.bound = '1'; enBtn.addEventListener('click', () => { this.applyStatic('en'); this.renderAccordion(); }); }
-    document.querySelectorAll('[data-setlang]').forEach(b => { if (!b.dataset.bound) { b.dataset.bound = '1'; b.addEventListener('click', () => { this.applyStatic(b.getAttribute('data-setlang')); this.renderAccordion(); }); } });
+    const persistLang = (l) => { try { localStorage.setItem('greenance_lang', l); } catch (e) {} };
+    if (frBtn && !frBtn.dataset.bound) { frBtn.dataset.bound = '1'; frBtn.addEventListener('click', () => { this.applyStatic('fr'); this.renderAccordion(); persistLang('fr'); }); }
+    if (enBtn && !enBtn.dataset.bound) { enBtn.dataset.bound = '1'; enBtn.addEventListener('click', () => { this.applyStatic('en'); this.renderAccordion(); persistLang('en'); }); }
+    document.querySelectorAll('[data-setlang]').forEach(b => { if (!b.dataset.bound) { b.dataset.bound = '1'; b.addEventListener('click', () => { const l = b.getAttribute('data-setlang'); this.applyStatic(l); this.renderAccordion(); persistLang(l); }); } });
   }
 
   renderAccordion() {

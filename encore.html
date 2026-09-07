@@ -294,12 +294,17 @@ class Component extends DCLogic {
     };
 
     const frBtn = document.getElementById('lang-fr'), enBtn = document.getElementById('lang-en');
-    if (frBtn) frBtn.addEventListener('click', () => apply('fr'));
-    if (enBtn) enBtn.addEventListener('click', () => apply('en'));
-    document.querySelectorAll('[data-setlang]').forEach(b => b.addEventListener('click', () => apply(b.getAttribute('data-setlang'))));
+    const persistLang = (l) => { try { localStorage.setItem('greenance_lang', l); } catch (e) {} };
+    if (frBtn) frBtn.addEventListener('click', () => { apply('fr'); persistLang('fr'); });
+    if (enBtn) enBtn.addEventListener('click', () => { apply('en'); persistLang('en'); });
+    document.querySelectorAll('[data-setlang]').forEach(b => b.addEventListener('click', () => { const l = b.getAttribute('data-setlang'); apply(l); persistLang(l); }));
 
     const params = new URLSearchParams(window.location.search);
-    const initLang = params.get('lang') === 'en' ? 'en' : (this.props.defaultLang === 'en' ? 'en' : 'fr');
+    const urlLang = params.get('lang');
+    let savedLang = null;
+    try { savedLang = localStorage.getItem('greenance_lang'); } catch (e) {}
+    const initLang = (urlLang === 'en' || urlLang === 'fr') ? urlLang : (savedLang === 'en' || savedLang === 'fr' ? savedLang : (this.props.defaultLang === 'en' ? 'en' : 'fr'));
+    if (urlLang === 'en' || urlLang === 'fr') persistLang(urlLang);
     apply(initLang);
 
     const burger = document.getElementById('burger'), panel = document.getElementById('mobile-panel');

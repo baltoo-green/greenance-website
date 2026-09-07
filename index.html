@@ -717,11 +717,14 @@ class Component extends DCLogic {
     };
 
     const frBtn = document.getElementById('lang-fr'), enBtn = document.getElementById('lang-en');
-    if (frBtn) frBtn.addEventListener('click', () => apply('fr'));
-    if (enBtn) enBtn.addEventListener('click', () => apply('en'));
-    document.querySelectorAll('[data-setlang]').forEach(b => b.addEventListener('click', () => apply(b.getAttribute('data-setlang'))));
+    const persistLang = (l) => { try { localStorage.setItem('greenance_lang', l); } catch (e) {} };
+    if (frBtn) frBtn.addEventListener('click', () => { apply('fr'); persistLang('fr'); });
+    if (enBtn) enBtn.addEventListener('click', () => { apply('en'); persistLang('en'); });
+    document.querySelectorAll('[data-setlang]').forEach(b => b.addEventListener('click', () => { const l = b.getAttribute('data-setlang'); apply(l); persistLang(l); }));
 
-    apply(this.props.defaultLang === 'en' ? 'en' : 'fr');
+    let savedLang = null;
+    try { savedLang = localStorage.getItem('greenance_lang'); } catch (e) {}
+    apply(savedLang === 'en' || savedLang === 'fr' ? savedLang : (this.props.defaultLang === 'en' ? 'en' : 'fr'));
 
     const burger = document.getElementById('burger'), panel = document.getElementById('mobile-panel');
     if (burger && panel) {
