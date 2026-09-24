@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJHH77CB2L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EJHH77CB2L');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ENCORE : Scoring Sectoriel du Risque Nature — Greenance</title>
 <meta name="description" content="Origine, gouvernance et méthodologie d'ENCORE, la base de référence pour les dépendances sectorielles à la nature, et pourquoi elle ne suffit jamais seule.">
 <link rel="canonical" href="https://greenance.fr/encore.html">
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<script src="assets/vendor/react.production.min.js"></script>
+<script src="assets/vendor/react-dom.production.min.js"></script>
+<script src="consent.js"></script>
 <script src="./support.js"></script>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -36,9 +31,6 @@
   "mainEntityOfPage": "https://greenance.fr/encore.html"
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -200,7 +192,9 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <a class="navlink" href="faq.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footFaq">FAQ</a>
         <a class="navlink" href="ressources.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footResources">Ressources</a>
         <a class="navlink" href="index.html#apropos" style="color:#D7DCD8;font-size:14px;" data-i18n="footAbout">À propos</a>
-        <a class="navlink" href="#" style="color:#D7DCD8;font-size:14px;" data-i18n="footPrivacy">Politique de confidentialité</a>
+        <a class="navlink" href="politique-confidentialite.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footPrivacy">Politique de confidentialité</a>
+        <a class="navlink" href="mentions-legales.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footLegal">Mentions légales</a>
+        <a class="navlink" href="#" data-cookie-settings style="color:#D7DCD8;font-size:14px;" data-i18n="footCookies">Gérer les cookies</a>
       </div>
       <div>
         <div style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:#6B7280;margin-bottom:10px;">Contact</div>
@@ -242,7 +236,7 @@ class Component extends DCLogic {
       seeAlsoLabel:"Voir aussi", seeAlso1:"Méthodologie →", seeAlso2:"Réglementation BCE 2026 →", seeAlso3:"TNFD et LEAP →",
       sources:"Sources : ENCORE (encorenature.org), Methodology & Downloads ; ENCORE, Major upgrade launch, 1er juillet 2024 ; UNEP-WCMC, \"Groundbreaking new tool allows financial institutions to see their exposure to Natural Capital risk\" ; Global Canopy, \"How financial institutions use ENCORE for TNFD risk assessments\".",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
-      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
+      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité", footLegal:"Mentions légales", footCookies:"Gérer les cookies",
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
     },
     en: {
@@ -271,7 +265,7 @@ class Component extends DCLogic {
       seeAlsoLabel:"See also", seeAlso1:"Methodology →", seeAlso2:"ECB 2026 Regulation →", seeAlso3:"TNFD and LEAP →",
       sources:"Sources: ENCORE (encorenature.org), Methodology & Downloads; ENCORE, Major upgrade launch, 1 July 2024; UNEP-WCMC, \"Groundbreaking new tool allows financial institutions to see their exposure to Natural Capital risk\"; Global Canopy, \"How financial institutions use ENCORE for TNFD risk assessments\".",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
-      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy",
+      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy", footLegal:"Legal notice", footCookies:"Manage cookies",
       footRights:"© 2026 Greenance SAS. All rights reserved."
     }
   };

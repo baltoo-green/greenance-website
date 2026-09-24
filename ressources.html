@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJHH77CB2L"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EJHH77CB2L');
-</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ressources : Risque Nature et Réglementation — Greenance</title>
 <meta name="description" content="Analyses de fond sur la réglementation, les cadres de référence et la méthode derrière le risque nature : réglementation BCE 2026, TNFD et LEAP.">
 <link rel="canonical" href="https://greenance.fr/ressources.html">
+<link href="assets/fonts/fonts.css" rel="stylesheet">
+<script src="assets/vendor/react.production.min.js"></script>
+<script src="assets/vendor/react-dom.production.min.js"></script>
+<script src="consent.js"></script>
 <script src="./support.js"></script>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
@@ -131,9 +126,6 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -261,7 +253,9 @@ body{margin:0;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:
         <a class="navlink" href="faq.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footFaq">FAQ</a>
         <a class="navlink" href="ressources.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footResources">Ressources</a>
         <a class="navlink" href="index.html#apropos" style="color:#D7DCD8;font-size:14px;" data-i18n="footAbout">À propos</a>
-        <a class="navlink" href="#" style="color:#D7DCD8;font-size:14px;" data-i18n="footPrivacy">Politique de confidentialité</a>
+        <a class="navlink" href="politique-confidentialite.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footPrivacy">Politique de confidentialité</a>
+        <a class="navlink" href="mentions-legales.html" style="color:#D7DCD8;font-size:14px;" data-i18n="footLegal">Mentions légales</a>
+        <a class="navlink" href="#" data-cookie-settings style="color:#D7DCD8;font-size:14px;" data-i18n="footCookies">Gérer les cookies</a>
       </div>
       <div>
         <div style="font-size:12px;text-transform:uppercase;letter-spacing:0.08em;color:#6B7280;margin-bottom:10px;">Contact</div>
@@ -291,7 +285,7 @@ class Component extends DCLogic {
       art4Title:"Glossaire du risque nature", art4Body:"Les termes essentiels définis simplement : TNFD, LEAP, ENCORE, matérialité, risque physique, risque de transition, et plus.",
       readArticle:"Lire l'article →",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
-      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité",
+      footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité", footLegal:"Mentions légales", footCookies:"Gérer les cookies",
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
     },
     en: {
@@ -308,7 +302,7 @@ class Component extends DCLogic {
       art4Title:"Nature Risk Glossary", art4Body:"The essential terms defined simply: TNFD, LEAP, ENCORE, materiality, physical risk, transition risk, and more.",
       readArticle:"Read the article →",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
-      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy",
+      footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy", footLegal:"Legal notice", footCookies:"Manage cookies",
       footRights:"© 2026 Greenance SAS. All rights reserved."
     }
   };
