@@ -234,7 +234,7 @@ class Component extends DCLogic {
       s7h:"En bref",
       s7p1:"ENCORE couvre 167 secteurs et 21 services écosystémiques, avec une notation de matérialité sur 5 niveaux (VH à VL), mise à jour en juillet 2024 pour plus de précision quantitative. C'est un outil de dépistage sectoriel, pas une mesure au niveau du site. Le cadre TNFD est explicite : les impacts sectoriels génériques ne peuvent pas se substituer à une analyse géolocalisée, ENCORE sert de point d'entrée à la phase \"Localiser\" de LEAP, jamais de substitut.",
       seeAlsoLabel:"Voir aussi", seeAlso1:"Méthodologie →", seeAlso2:"Réglementation BCE 2026 →", seeAlso3:"TNFD et LEAP →",
-      sources:"Sources : ENCORE (encorenature.org), Methodology & Downloads ; ENCORE, Major upgrade launch, 1er juillet 2024 ; UNEP-WCMC, \"Groundbreaking new tool allows financial institutions to see their exposure to Natural Capital risk\" ; Global Canopy, \"How financial institutions use ENCORE for TNFD risk assessments\".",
+      sources:"Sources : <a href=\"https://www.encorenature.org\" target=\"_blank\" rel=\"noopener\" style=\"color:#9CA3AF;\">ENCORE (encorenature.org), Methodology &amp; Downloads</a> ; <a href=\"https://www.encorenature.org\" target=\"_blank\" rel=\"noopener\" style=\"color:#9CA3AF;\">ENCORE, Major upgrade launch, 1er juillet 2024</a> ; UNEP-WCMC, \"Groundbreaking new tool allows financial institutions to see their exposure to Natural Capital risk\" ; Global Canopy, \"How financial institutions use ENCORE for TNFD risk assessments\".",
       demoTitle:"Voyez Greenance en action.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
       footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité", footLegal:"Mentions légales", footCookies:"Gérer les cookies",
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
@@ -263,7 +263,7 @@ class Component extends DCLogic {
       s7h:"In brief",
       s7p1:"ENCORE covers 167 sectors and 21 ecosystem services, with a five-level materiality rating (VH to VL), updated in July 2024 for greater quantitative precision. It's a sector-level screening tool, not a site-level measurement. The TNFD framework is explicit: generic sector impacts cannot substitute for geolocated analysis, ENCORE serves as an entry point to LEAP's \"Locate\" phase, never as a substitute.",
       seeAlsoLabel:"See also", seeAlso1:"Methodology →", seeAlso2:"ECB 2026 Regulation →", seeAlso3:"TNFD and LEAP →",
-      sources:"Sources: ENCORE (encorenature.org), Methodology & Downloads; ENCORE, Major upgrade launch, 1 July 2024; UNEP-WCMC, \"Groundbreaking new tool allows financial institutions to see their exposure to Natural Capital risk\"; Global Canopy, \"How financial institutions use ENCORE for TNFD risk assessments\".",
+      sources:"Sources: <a href=\"https://www.encorenature.org\" target=\"_blank\" rel=\"noopener\" style=\"color:#9CA3AF;\">ENCORE (encorenature.org), Methodology &amp; Downloads</a>; <a href=\"https://www.encorenature.org\" target=\"_blank\" rel=\"noopener\" style=\"color:#9CA3AF;\">ENCORE, Major upgrade launch, 1 July 2024</a>; UNEP-WCMC, \"Groundbreaking new tool allows financial institutions to see their exposure to Natural Capital risk\"; Global Canopy, \"How financial institutions use ENCORE for TNFD risk assessments\".",
       demoTitle:"See Greenance in action.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
       footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy", footLegal:"Legal notice", footCookies:"Manage cookies",
       footRights:"© 2026 Greenance SAS. All rights reserved."
@@ -281,7 +281,7 @@ class Component extends DCLogic {
       const dict = T[l]; if (!dict) return;
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const k = el.getAttribute('data-i18n');
-        if (dict[k] != null) el.textContent = dict[k];
+        if (dict[k] != null) { if (k === 'sources') el.innerHTML = dict[k]; else el.textContent = dict[k]; }
       });
       setActive(l);
       try { document.documentElement.lang = l; document.title = dict.pageTitle; } catch (e) {}
