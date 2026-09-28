@@ -8,6 +8,9 @@
  * - Any element with [data-cookie-settings] reopens the panel, so consent
  *   can be withdrawn as easily as it was given.
  * - Vercel Web Analytics is cookieless and needs no consent; it stays as is.
+ * - "Réserver une démo" buttons ([data-calendly]) open Calendly's popup. Without
+ *   Calendly consent the click is intercepted and a small dialog offers to
+ *   accept and open the calendar, or to book directly on calendly.com.
  */
 (function () {
   'use strict';
@@ -19,6 +22,7 @@
   var GA_COOKIE_SECONDS = 395 * 24 * 60 * 60;         // 13 months max (CNIL)
   var CALENDLY_JS = 'https://assets.calendly.com/assets/external/widget.js';
   var CALENDLY_CSS = 'https://assets.calendly.com/assets/external/widget.css';
+  var CALENDLY_URL = 'https://calendly.com/balthazar-courtois-greenance/30min';
 
   var TEXT = {
     fr: {
@@ -36,6 +40,11 @@
       necessaryLabel: 'Strictement nécessaires',
       necessaryDesc: 'Mémorisation de vos choix de cookies et de langue. Toujours actifs.',
       on: 'Activé', off: 'Désactivé',
+      gateTitle: 'Réserver une démo',
+      gateBody: 'Le calendrier de réservation est fourni par Calendly, qui dépose ses propres cookies. Il ne s’affiche sur ce site qu’avec votre accord.',
+      gateAccept: 'Accepter et ouvrir le calendrier',
+      gateDirect: 'Réserver sur calendly.com',
+      gateClose: 'Fermer',
       showCookies: 'Voir les cookies',
       vercelNote: 'Les statistiques de fréquentation Vercel n’utilisent aucun cookie.',
       cookies: {
@@ -67,6 +76,11 @@
       necessaryLabel: 'Strictly necessary',
       necessaryDesc: 'Remembers your cookie and language choices. Always on.',
       on: 'On', off: 'Off',
+      gateTitle: 'Book a demo',
+      gateBody: 'The booking calendar is provided by Calendly, which sets its own cookies. It only appears on this site with your consent.',
+      gateAccept: 'Accept and open the calendar',
+      gateDirect: 'Book on calendly.com',
+      gateClose: 'Close',
       showCookies: 'Show cookies',
       vercelNote: 'Vercel visit statistics do not use any cookie.',
       cookies: {
@@ -99,14 +113,12 @@
     try { localStorage.setItem(STORE_KEY, JSON.stringify(c)); } catch (e) {}
     return c;
   }
+  // Same precedence as the pages (lang.js): ?lang= > saved choice > French.
   function lang() {
+    if (window.__gnLang) return window.__gnLang('fr');
     var l = null;
     try { l = localStorage.getItem('greenance_lang'); } catch (e) {}
-    if (l !== 'en' && l !== 'fr') {
-      var p = new URLSearchParams(window.location.search).get('lang');
-      l = (p === 'en') ? 'en' : 'fr';
-    }
-    return l;
+    return l === 'en' ? 'en' : 'fr';
   }
 
   // ---------- loaders ----------
@@ -169,7 +181,7 @@
     st.id = 'gc-style';
     st.textContent = [
       '#gc-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;display:flex;justify-content:center;pointer-events:none;}',
-      '#gc-banner .gc-card{pointer-events:auto;width:100%;max-width:720px;max-height:calc(100vh - 32px);overflow-y:auto;background:#fff;color:#1A1A1A;border:1px solid #E5E7EB;border-radius:16px;box-shadow:0 18px 48px rgba(0,0,0,0.16);padding:22px 24px;font-family:Inter,system-ui,-apple-system,sans-serif;font-size:14.5px;line-height:1.55;}',
+      '#gc-banner .gc-card{pointer-events:auto;width:100%;max-width:720px;max-height:calc(100vh - 32px);overflow-y:auto;background:#fff;color:#1A1A1A;border:1px solid #E5E7EB;border-radius:22px;box-shadow:0 18px 48px rgba(0,0,0,0.16);padding:22px 24px;font-family:Inter,system-ui,-apple-system,sans-serif;font-size:14.5px;line-height:1.55;}',
       '#gc-banner .gc-opt-text{min-width:0;flex:1;}',
       '#gc-banner .gc-details{margin-top:6px;}',
       '#gc-banner .gc-details summary{cursor:pointer;font-size:13px;font-weight:600;color:#41805A;list-style-position:inside;}',
@@ -181,11 +193,11 @@
       '#gc-banner .gc-details small{font-size:12.5px;color:#6B7280;}',
       '#gc-banner .gc-note{margin:10px 0 0;font-size:12.5px;color:#6B7280;}',
       '@media(max-width:560px){#gc-banner .gc-details li{grid-template-columns:1fr;gap:2px;}}',
-      '#gc-banner h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:19px;margin:0 0 8px;color:#1A1A1A;}',
+      '#gc-banner h2{font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif;font-weight:800;font-size:19px;letter-spacing:-0.01em;margin:0 0 8px;color:#121512;}',
       '#gc-banner p{margin:0 0 16px;color:#4B5563;}',
       '#gc-banner a{color:#41805A;font-weight:600;}',
       '#gc-banner .gc-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;}',
-      '#gc-banner .gc-btn{appearance:none;border:0;cursor:pointer;font:inherit;font-weight:600;font-size:14.5px;padding:11px 18px;border-radius:10px;min-width:150px;}',
+      '#gc-banner .gc-btn{appearance:none;border:0;cursor:pointer;font:inherit;font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif;font-weight:700;font-size:14.5px;padding:12px 20px;border-radius:100px;min-width:150px;}',
       '#gc-banner .gc-main{background:#5A9E6F;color:#fff;}',
       '#gc-banner .gc-main:hover{background:#41805A;}',
       '#gc-banner .gc-link{background:transparent;color:#1A1A1A;text-decoration:underline;min-width:0;padding:11px 8px;}',
@@ -197,7 +209,20 @@
       '#gc-banner .gc-switch{flex:none;display:flex;align-items:center;gap:8px;font-size:13px;color:#4B5563;cursor:pointer;}',
       '#gc-banner .gc-switch input{width:18px;height:18px;accent-color:#5A9E6F;cursor:pointer;}',
       '#gc-banner .gc-btn:focus-visible,#gc-banner .gc-switch input:focus-visible{outline:2px solid #1A1A1A;outline-offset:2px;}',
-      '@media(max-width:560px){#gc-banner{left:10px;right:10px;bottom:10px;}#gc-banner .gc-card{padding:18px;}#gc-banner .gc-btn{flex:1 1 100%;}#gc-banner .gc-link{flex:1 1 100%;}}'
+      '@media(max-width:560px){#gc-banner{left:10px;right:10px;bottom:10px;}#gc-banner .gc-card{padding:18px;}#gc-banner .gc-btn{flex:1 1 100%;}#gc-banner .gc-link{flex:1 1 100%;}}',
+      // Calendly gate (centered dialog over a dim backdrop)
+      '#gc-gate{position:fixed;inset:0;z-index:2147483001;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(18,21,18,0.45);}',
+      '#gc-gate .gc-card{position:relative;width:100%;max-width:480px;background:#fff;color:#1A1A1A;border-radius:22px;box-shadow:0 24px 60px rgba(0,0,0,0.25);padding:26px 26px 24px;font-family:Inter,system-ui,-apple-system,sans-serif;font-size:14.5px;line-height:1.55;}',
+      '#gc-gate h2{font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif;font-weight:800;font-size:20px;letter-spacing:-0.01em;margin:0 0 10px;color:#121512;padding-right:28px;}',
+      '#gc-gate p{margin:0 0 20px;color:#4B5563;}',
+      '#gc-gate .gc-row{display:flex;flex-direction:column;gap:10px;}',
+      '#gc-gate .gc-btn{appearance:none;border:0;cursor:pointer;font:inherit;font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif;font-weight:700;font-size:15px;padding:13px 20px;border-radius:100px;text-align:center;text-decoration:none;display:block;}',
+      '#gc-gate .gc-main{background:#5A9E6F;color:#fff;}',
+      '#gc-gate .gc-main:hover{background:#41805A;}',
+      '#gc-gate .gc-ghost{background:#F1F6F2;color:#2F6B45;}',
+      '#gc-gate .gc-ghost:hover{background:#E4EFE7;}',
+      '#gc-gate .gc-x{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;border:0;background:#F4F6F4;color:#4B5563;font-size:20px;line-height:34px;cursor:pointer;padding:0;}',
+      '#gc-gate .gc-btn:focus-visible,#gc-gate .gc-x:focus-visible{outline:2px solid #121512;outline-offset:2px;}'
     ].join('');
     document.head.appendChild(st);
   }
@@ -279,8 +304,81 @@
     apply(c);
   }
 
+  // ---------- Calendly gate for the popup buttons ([data-calendly]) ----------
+  var gate = null, gateReturnFocus = null;
+
+  function openPopupWhenReady(tries) {
+    if (window.Calendly && window.Calendly.initPopupWidget) {
+      window.Calendly.initPopupWidget({ url: CALENDLY_URL });
+      return;
+    }
+    if ((tries || 0) < 80) setTimeout(function () { openPopupWhenReady((tries || 0) + 1); }, 150);
+  }
+
+  function closeGate() {
+    if (gate && gate.parentNode) gate.parentNode.removeChild(gate);
+    gate = null;
+    if (gateReturnFocus && gateReturnFocus.focus) { try { gateReturnFocus.focus(); } catch (e) {} }
+  }
+
+  function openGate(trigger) {
+    if (!document.body) return;
+    css();
+    closeGate();
+    gateReturnFocus = trigger || null;
+    var t = TEXT[lang()];
+    gate = document.createElement('div');
+    gate.id = 'gc-gate';
+    gate.innerHTML = '<div class="gc-card" role="dialog" aria-modal="true" aria-labelledby="gc-gate-title">' +
+      '<button type="button" class="gc-x" data-gate="close" aria-label="' + t.gateClose + '">×</button>' +
+      '<h2 id="gc-gate-title">' + t.gateTitle + '</h2>' +
+      '<p>' + t.gateBody + '</p>' +
+      '<div class="gc-row">' +
+        '<button type="button" class="gc-btn gc-main" data-gate="accept">' + t.gateAccept + '</button>' +
+        '<a class="gc-btn gc-ghost" data-gate="direct" href="' + CALENDLY_URL + '" target="_blank" rel="noopener">' + t.gateDirect + '</a>' +
+      '</div></div>';
+    document.body.appendChild(gate);
+    var first = gate.querySelector('[data-gate="accept"]');
+    if (first) first.focus();
+  }
+
+  // Capture phase on window: runs before the page's own [data-calendly]
+  // handler, which would otherwise wait forever for a Calendly script that
+  // is not allowed to load.
+  window.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest && e.target.closest('[data-calendly]');
+    if (!el) return;
+    var c = read();
+    if (c && c.calendly) { loadCalendly(); return; }   // let the page open the popup
+    e.preventDefault();
+    e.stopPropagation();
+    var mp = document.getElementById('mobile-panel');
+    if (mp) mp.classList.remove('open');
+    openGate(el);
+  }, true);
+
+  document.addEventListener('keydown', function (e) {
+    if (gate && (e.key === 'Escape' || e.key === 'Esc')) closeGate();
+  });
+
   // ---------- events (delegated: the page is rendered by React after load) ----------
   document.addEventListener('click', function (e) {
+    var g = e.target && e.target.closest && (e.target.closest('#gc-gate [data-gate]') || (e.target.id === 'gc-gate' ? e.target : null));
+    if (g) {
+      var act = g.id === 'gc-gate' ? 'close' : g.getAttribute('data-gate');
+      if (act === 'accept') {
+        var cur0 = read() || { analytics: false };
+        closeGate();
+        decide(!!cur0.analytics, true);
+        openPopupWhenReady(0);
+      } else if (act === 'direct') {
+        closeGate();                 // the link itself opens calendly.com in a new tab
+      } else if (act === 'close') {
+        closeGate();
+      }
+      return;
+    }
+
     var el = e.target;
     if (!el || !el.closest) return;
 

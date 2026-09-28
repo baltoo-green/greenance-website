@@ -2,7 +2,7 @@
 
 > AI-powered nature risk intelligence platform (water, soil, biodiversity) at the asset level, primarly for banks, but also asset managers, insurers, and any financial institutions.
 
-Greenance automatically identifies and geolocates a company's assets from its name alone, processing over a hundred assets in under a minute. Each site is cross-referenced against global environmental databases (WRI Aqueduct, SoilGrids, Natura 2000, IBAT, Natura 2000, KBA, Copernicus, USGS, GRESB, Open-Meteo) to produce a nature vulnerability score, tailored to the activity, across three pillars: water, soil, biodiversity.
+Greenance automatically identifies and geolocates a company's assets from its name alone, covering a portfolio of 150+ assets in a few minutes. Each site is cross-referenced against global environmental databases (WRI Aqueduct, SoilGrids, Natura 2000, IBAT, Natura 2000, KBA, Copernicus, USGS, GRESB, Open-Meteo) to produce a nature vulnerability score, tailored to the activity, across three pillars: water, soil, biodiversity.
 
 The methodology is built on the TNFD/LEAP and ENCORE frameworks, and aligns with CSRD and ECB/SSM supervisory expectations on physical risk (2026), as well as EBA/GL/2025/01.
 

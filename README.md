@@ -5,17 +5,23 @@ components (`.dc.html`) and deployed on Vercel from `main`.
 
 ## Structure
 
-- `index.html`, `methodologie.html`, `faq.html`, `ressources.html` and the
-  article pages: bilingual FR/EN pages rendered by the dc-runtime
+- `index.html`, `solution.html`, `a-propos.html`, `methodologie.html`,
+  `faq.html`, `ressources.html`, `glossaire.html` and the article pages
+  (`reglementation-bce-2026.html`, `tnfd-leap.html`, `encore.html`):
+  bilingual FR/EN pages rendered by the dc-runtime
 - `mentions-legales.html`, `politique-confidentialite.html`: legal notice and
-  privacy/cookie policy
+  privacy/cookie policy (generated from the glossary page layout)
 - `support.js`: dc-runtime
-- `consent.js`: cookie consent banner. Google Analytics and the Calendly
-  widget only load after consent; "Gérer les cookies" in the footer reopens it
+- `lang.js`: language persistence shared by every page (`?lang=` > saved
+  choice > French)
+- `consent.js`: cookie consent banner. Google Analytics and Calendly only
+  load after consent; "Gérer les cookies" in the footer reopens it; without
+  consent, "Réserver une démo" buttons open a dialog instead of Calendly
 - `assets/vendor/`: self-hosted React 18.3.1 (same files and SRI hashes the
   runtime would otherwise fetch from unpkg)
-- `assets/fonts/`: self-hosted Fraunces, Inter, JetBrains Mono (no request to
-  Google Fonts)
+- `assets/fonts/`: self-hosted Plus Jakarta Sans, Inter and Merriweather 900
+  (no request to Google Fonts)
+- `assets/greenance-platform-shot.webp`: platform screenshot on the homepage
 
 ## Run locally
 
@@ -24,13 +30,24 @@ python3 -m http.server 8099 --directory .
 # then open http://localhost:8099
 ```
 
-## Notes
+## Importing a new design export
 
-- Language choice (FR by default) is stored in `localStorage`
-  (`greenance_lang`) and shared across pages.
-- Everything a page needs is served from greenance.fr. The only third-party
-  requests are Google Analytics and Calendly, and both wait for consent.
-- When adding a new page: include `assets/fonts/fonts.css`, the two React
-  vendor scripts and `consent.js` before `support.js` in `<head>` (copy the
-  head of an existing page), and keep the footer's privacy / legal notice /
-  "Gérer les cookies" links.
+The design export is the source for visuals and texts; everything below
+belongs to the site and must be re-applied on top of it:
+
+- `<head>`: SEO title (45-60 chars), meta description (150-160 chars),
+  canonical, JSON-LD, then `assets/fonts/fonts.css`, the two React vendor
+  scripts, `lang.js`, `consent.js`, `support.js` and Vercel Analytics
+- remove from `<helmet>`: title/description/canonical (they live in
+  `<head>`), Google Fonts links, Calendly widget script/CSS
+- `__gnBrand` must not load Merriweather from Google (it is in fonts.css)
+- `.dc.html` links rewritten to `.html`
+- footer: privacy policy link, "Mentions légales", "Gérer les cookies"
+- each page's initial language via `window.__gnLang(this.props.defaultLang)`;
+  JS `pageTitle` (FR) identical to the `<head>` title
+- homepage Calendly placeholder with the consent button
+- articles: LinkedIn bylines, clickable sources (`sources` uses innerHTML),
+  "Voir aussi" links
+- FAQ: static Q&A cards in `#accordion` (crawlable without JS), FAQPage
+  JSON-LD matching the visible answers
+- empty `data-i18n` elements filled with the French text (crawlable content)
