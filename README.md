@@ -46,6 +46,9 @@ belongs to the site and must be re-applied on top of it:
   `<head>`), Google Fonts links, Calendly widget script/CSS
 - `__gnBrand` must not load Merriweather from Google (it is in fonts.css)
 - `.dc.html` links rewritten to `.html`
+- header logo: `assets/logo-nav.png` (`logo-dark-strong.png` trimmed of its
+  transparent margins) at `height:16px`, so the letters sit on the same
+  vertical axis as the menu links and the demo button
 - footer: privacy policy link, "Mentions légales", "Gérer les cookies"
 - each page's initial language via `window.__gnLang(this.props.defaultLang)`;
   JS `pageTitle` (FR) identical to the `<head>` title
