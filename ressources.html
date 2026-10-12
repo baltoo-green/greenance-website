@@ -67,34 +67,41 @@
   "@type": "ItemList",
   "@id": "https://greenance.fr/ressources.html#resource-list",
   "name": "Ressources Greenance",
-  "description": "Analyses de fond sur la réglementation, les cadres de référence et la méthodologie du risque nature.",
+  "description": "Études, analyses de fond sur la réglementation, les cadres de référence et la méthodologie du risque nature.",
   "itemListOrder": "https://schema.org/ItemListOrderAscending",
-  "numberOfItems": 4,
+  "numberOfItems": 5,
   "itemListElement": [
     {
       "@type": "ListItem",
       "position": 1,
+      "url": "https://greenance.fr/barometre-2026-risques-nature-analyse-credit.html",
+      "name": "Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit",
+      "description": "Une étude Greenance × Junior ESSEC auprès de 80+ professionnels pour comprendre les pratiques, les outils et les difficultés rencontrées dans la prise en compte des risques liés à la nature dans l'analyse crédit."
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
       "url": "https://greenance.fr/reglementation-bce-2026.html",
       "name": "Réglementation BCE 2026 : risque nature et supervision bancaire",
       "description": "Ce qui change avec les priorités prudentielles BCE 2026-2028 et les orientations EBA/GL/2025/01 : dates d'application, exigences concrètes sur la gestion des risques ESG, sanctions déjà appliquées, et ce que ça implique pour votre établissement en termes de granularité de données."
     },
     {
       "@type": "ListItem",
-      "position": 2,
+      "position": 3,
       "url": "https://greenance.fr/tnfd-leap.html",
       "name": "TNFD et LEAP : le cadre de référence du risque nature",
       "description": "Ce qu'est la TNFD, en quoi elle diffère fondamentalement de la TCFD, comment fonctionne l'approche LEAP en quatre phases, pourquoi l'analyse sectorielle seule ne suffit pas, et pourquoi ce cadre est désormais reconnu par l'EBA comme la référence pour les risques liés à la nature."
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
       "url": "https://greenance.fr/encore.html",
       "name": "ENCORE : la base de données derrière le scoring sectoriel du risque nature",
       "description": "Origine, gouvernance et méthodologie d'ENCORE, la base de référence pour les dépendances sectorielles à la nature, et pourquoi elle ne suffit jamais à elle seule."
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "position": 5,
       "url": "https://greenance.fr/glossaire.html",
       "name": "Glossaire du risque nature",
       "description": "Les termes essentiels définis simplement : TNFD, LEAP, ENCORE, matérialité, risque physique, risque de transition, et plus."
@@ -144,6 +151,8 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
 .bar{display:block;width:20px;height:2px;background:#1A1A1A;border-radius:2px;}
 .dotgrid{background-image:radial-gradient(#DCE4DC 1.1px,transparent 1.1px);background-size:24px 24px;}
 .rescard{border:1px solid rgba(18,21,18,0.04);box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);border-radius:18px;background:#fff;padding:30px;text-decoration:none;display:block;transition:transform .25s cubic-bezier(.2,.7,.3,1),border-color .25s ease,box-shadow .25s ease;}
+.rescard-study{grid-column:1/-1;background:linear-gradient(135deg,#FFFFFF 0%,#F4FAF6 100%);border-color:#DCEADF;}
+.rescard:focus-visible{outline:3px solid #3DDC84;outline-offset:3px;}
 .rescard:hover{transform:translateY(-3px);border-color:#DCEADF;box-shadow:0 16px 34px rgba(0,0,0,0.06);}
 @media(max-width:900px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
 .pill{white-space:nowrap;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;}
@@ -208,6 +217,12 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
   <!-- ARTICLES -->
   <section style="padding:clamp(24px,4vw,40px) 24px clamp(72px,8vw,104px);">
     <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:20px;">
+      <a data-reveal="" class="rescard rescard-study" href="barometre-2026-risques-nature-analyse-credit.html" data-href-fr="barometre-2026-risques-nature-analyse-credit.html" data-href-en="barometre-2026-risques-nature-analyse-credit.html?lang=en">
+        <span data-i18n="studyTag" style="display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:5px 11px;border-radius:100px;background:#EAF4EC;color:#2F6B45;margin-bottom:14px;">Étude · Greenance × Junior ESSEC</span>
+        <h2 data-i18n="studyTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,2.6vw,27px);line-height:1.22;margin:0 0 12px;color:#1A1A1A;">Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit</h2>
+        <p data-i18n="studyBody" style="font-size:15.5px;line-height:1.65;color:#6B7280;margin:0 0 18px;max-width:720px;">Une étude Greenance × Junior ESSEC auprès de 80+ professionnels pour comprendre les pratiques, les outils et les difficultés rencontrées dans la prise en compte des risques liés à la nature dans l'analyse crédit.</p>
+        <span data-i18n="studyCta" style="font-size:14.5px;font-weight:600;color:#5A9E6F;">Découvrir l'étude et la télécharger →</span>
+      </a>
       <a data-reveal="" class="rescard" href="reglementation-bce-2026.html" data-href-fr="reglementation-bce-2026.html" data-href-en="reglementation-bce-2026.html?lang=en">
         <h2 data-i18n="art1Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.25;margin:0 0 12px;color:#1A1A1A;">Réglementation BCE 2026 : risque nature et supervision bancaire</h2>
         <p data-i18n="art1Body" style="font-size:15px;line-height:1.65;color:#6B7280;margin:0 0 18px;">Ce qui change avec les priorités prudentielles BCE 2026-2028 et les orientations EBA/GL/2025/01 : dates d'application, exigences concrètes sur la gestion des risques ESG, sanctions déjà appliquées, et ce que ça implique pour votre établissement en termes de granularité de données.</p>
@@ -297,6 +312,9 @@ class Component extends DCLogic {
       art3Title:"ENCORE : la base de données derrière le scoring sectoriel du risque nature",
       art3Body:"Origine, gouvernance et méthodologie d'ENCORE, la base de référence pour les dépendances sectorielles à la nature, et pourquoi elle ne suffit jamais à elle seule.",
       art4Title:"Glossaire du risque nature", art4Body:"Les termes essentiels définis simplement : TNFD, LEAP, ENCORE, matérialité, risque physique, risque de transition, et plus.",
+      studyTag:"Étude · Greenance × Junior ESSEC", studyTitle:"Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit",
+      studyBody:"Une étude Greenance × Junior ESSEC auprès de 80+ professionnels pour comprendre les pratiques, les outils et les difficultés rencontrées dans la prise en compte des risques liés à la nature dans l'analyse crédit.",
+      studyCta:"Découvrir l'étude et la télécharger →",
       readArticle:"Lire l'article →",
       demoTitle:"Ce que vos analystes verront demain.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
       footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité", footLegal:"Mentions légales", footCookies:"Gérer les cookies",
@@ -315,6 +333,9 @@ class Component extends DCLogic {
       art3Title:"ENCORE: the database behind sector-level nature risk scoring",
       art3Body:"Origin, governance, and methodology of ENCORE, the reference database for sector-level nature dependencies, and why it's never sufficient alone.",
       art4Title:"Nature risk glossary", art4Body:"The essential terms defined simply: TNFD, LEAP, ENCORE, materiality, physical risk, transition risk, and more.",
+      studyTag:"Study · Greenance × Junior ESSEC", studyTitle:"2026 Barometer: the place of nature-related risks in credit analysis",
+      studyBody:"A Greenance × Junior ESSEC study of 80+ professionals to understand the practices, tools and difficulties involved in taking nature-related risks into account in credit analysis.",
+      studyCta:"Explore and download the study →",
       readArticle:"Read the article →",
       demoTitle:"What your analysts will see tomorrow.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
       footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy", footLegal:"Legal notice", footCookies:"Manage cookies",

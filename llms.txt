@@ -8,6 +8,9 @@ The methodology is built on the TNFD/LEAP and ENCORE frameworks, and aligns with
 
 Built first for commercial banks (credit analysts, ESG teams, risk and compliance directors), Greenance also serves asset managers, insurers, SCPI/OPCI managers, and development banks.
 
+## Research
+- [Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit](https://greenance.fr/barometre-2026-risques-nature-analyse-credit.html): exploratory survey by Greenance × Junior ESSEC of 81 professionals (banking, other financial activities, consulting), July-October 2026, on reported practices, tools, obstacles and expected formats for nature-related risks in credit analysis. Non-probability sample; figures describe respondents, not banks. Full report, summary and key figures (PowerPoint, PDF) are free to download, in French.
+
 ## Contact
 Balthazar Courtois, CEO & Co-founder — balthazar.courtois@greenance.fr
 Website: https://greenance.fr

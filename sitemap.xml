@@ -32,7 +32,13 @@
   </url>
   <url>
     <loc>https://greenance.fr/ressources.html</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://greenance.fr/barometre-2026-risques-nature-analyse-credit.html</loc>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

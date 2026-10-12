@@ -9,6 +9,10 @@ components (`.dc.html`) and deployed on Vercel from `main`.
   `faq.html`, `ressources.html`, `glossaire.html` and the article pages
   (`reglementation-bce-2026.html`, `tnfd-leap.html`, `encore.html`):
   bilingual FR/EN pages rendered by the dc-runtime
+- `barometre-2026-risques-nature-analyse-credit.html`: Greenance × Junior
+  ESSEC study page (built from the article layout); the four downloadable
+  documents and the social share image live in `assets/etudes/`, unchanged
+  from the files delivered
 - `mentions-legales.html`, `politique-confidentialite.html`: legal notice and
   privacy/cookie policy (generated from the glossary page layout)
 - `support.js`: dc-runtime
