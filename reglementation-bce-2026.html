@@ -6,12 +6,13 @@
 <title>Réglementation BCE 2026 : risque nature, Greenance</title>
 <meta name="description" content="Priorités prudentielles BCE 2026-2028 et lignes directrices EBA/GL/2025/01 : ce qui change pour la gestion du risque nature dans la supervision bancaire.">
 <link rel="canonical" href="https://greenance.fr/reglementation-bce-2026.html">
+<style>x-dc{display:none!important}</style>
 <link href="assets/fonts/fonts.css" rel="stylesheet">
-<script src="assets/vendor/react.production.min.js"></script>
-<script src="assets/vendor/react-dom.production.min.js"></script>
-<script src="lang.js"></script>
-<script src="consent.js"></script>
-<script src="./support.js"></script>
+<script defer src="assets/vendor/react.production.min.js"></script>
+<script defer src="assets/vendor/react-dom.production.min.js"></script>
+<script defer src="lang.js"></script>
+<script defer src="consent.js"></script>
+<script defer src="./support.js"></script>
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
@@ -66,7 +67,7 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
   <!-- NAV -->
   <header style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(18,21,18,0.05);">
     <nav style="max-width:1240px;margin:0 auto;padding:0 28px;height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
-      <a href="index.html" style="display:flex;align-items:center;text-decoration:none;"><img src="assets/logo-nav.png" alt="Greenance" style="height:16px;width:auto;display:block;"></a>
+      <a href="index.html" style="display:flex;align-items:center;text-decoration:none;"><img src="assets/logo-nav.webp" width="137" height="16" alt="Greenance" style="height:16px;width:auto;display:block;"></a>
       <div class="nav-desktop" style="display:flex;align-items:center;gap:34px;">
         <ul style="display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0;">
           <li><a class="navlink" href="solution.html" data-i18n="navSolution">La Solution</a></li>
@@ -195,7 +196,7 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
   <footer style="position:relative;z-index:2;background:#121512;color:#fff;padding:clamp(56px,7vw,88px) 28px 40px;">
     <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:40px;align-items:start;">
       <div>
-        <img src="assets/logo-light.png" alt="Greenance" style="height:24px;width:auto;display:block;margin-bottom:18px;">
+        <img src="assets/logo-footer.webp" width="111" height="24" loading="lazy" alt="Greenance" style="height:24px;width:auto;display:block;margin-bottom:18px;">
         <p data-i18n="footTagline" style="font-size:15px;line-height:1.5;color:#9DA49F;margin:0;max-width:300px;">Le risque nature au niveau du site.</p>
       </div>
       <div class="linkrow" style="display:flex;flex-direction:column;gap:12px;">
@@ -316,7 +317,7 @@ class Component extends DCLogic {
         n.nodeValue.split(/(Greenance)/).forEach(part => {
           if (part !== 'Greenance') { if (part) frag.appendChild(document.createTextNode(part)); return; }
           let el;
-          if (big) { el = document.createElement('img'); el.src = light ? 'assets/logo-white.png' : 'assets/logo-dark-crop.png'; el.alt = 'Greenance'; el.style.cssText = 'height:0.72em;width:auto;vertical-align:0;margin:0 0.06em 0 0;display:inline-block;'; }
+          if (big) { el = document.createElement('img'); el.src = light ? 'assets/logo-white.webp' : 'assets/logo-dark-crop.webp'; el.alt = 'Greenance'; el.style.cssText = 'height:0.72em;width:auto;vertical-align:0;margin:0 0.06em 0 0;display:inline-block;'; }
           else { el = document.createElement('span'); el.textContent = 'Greenance'; el.style.cssText = "font-family:'Merriweather',Georgia,serif;font-weight:900;text-transform:uppercase;font-size:0.84em;letter-spacing:0.01em;"; }
           el.setAttribute('data-gn', '1'); frag.appendChild(el);
         });

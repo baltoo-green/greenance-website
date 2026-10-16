@@ -15,7 +15,8 @@ components (`.dc.html`) and deployed on Vercel from `main`.
   from the files delivered
 - `mentions-legales.html`, `politique-confidentialite.html`: legal notice and
   privacy/cookie policy (generated from the glossary page layout)
-- `support.js`: dc-runtime
+- `support.js`: dc-runtime (patched: the page only re-fetches itself when
+  embedded in the design editor, see `boot()`)
 - `lang.js`: language persistence shared by every page (`?lang=` > saved
   choice > French)
 - `consent.js`: cookie consent banner. Google Analytics and Calendly only
@@ -46,9 +47,13 @@ belongs to the site and must be re-applied on top of it:
   `<head>`), Google Fonts links, Calendly widget script/CSS
 - `__gnBrand` must not load Merriweather from Google (it is in fonts.css)
 - `.dc.html` links rewritten to `.html`
-- header logo: `assets/logo-nav.png` (`logo-dark-strong.png` trimmed of its
-  transparent margins) at `height:16px`, so the letters sit on the same
-  vertical axis as the menu links and the demo button
+- header logo: `assets/logo-nav.webp` (`logo-dark-strong.png` trimmed of its
+  transparent margins, 3x size, lossless WebP) at `height:16px`, so the
+  letters sit on the same vertical axis as the menu links and the demo button;
+  footer logo `assets/logo-footer.webp`; `__gnBrand` uses `logo-dark-crop.webp`
+  and `logo-white.webp`
+- performance: the five head scripts are `defer` and `<style>x-dc{display:none!important}</style>`
+  hides the raw template until the runtime renders it
 - footer: privacy policy link, "Mentions légales", "Gérer les cookies"
 - each page's initial language via `window.__gnLang(this.props.defaultLang)`;
   JS `pageTitle` (FR) identical to the `<head>` title

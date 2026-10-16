@@ -155,7 +155,10 @@
     runtime.markFetched(rootName);
     runtime.setRootName(rootName);
     runtime.adoptParsed(rootName, parsed);
-    fetch(location.href).then((res) => res.ok ? res.text() : "").then((t) => {
+    // Greenance patch: the self re-fetch (raw template source for the design
+    // editor) re-parses the page and re-renders the whole tree; on the public
+    // site nothing consumes it, so only do it when embedded in the editor.
+    if (window.parent !== window) fetch(location.href).then((res) => res.ok ? res.text() : "").then((t) => {
       const raw = t ? parseDcText(t) : null;
       if (raw?.template) runtime.updateHtml(rootName, raw.template);
     }).catch(() => {
