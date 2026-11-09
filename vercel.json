@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/ca/:caisse",
+      "destination": "/?utm_source=courrier&utm_medium=qr&utm_campaign=ca-caisses-2026&utm_content=:caisse",
+      "permanent": false
+    }
+  ]
+}
