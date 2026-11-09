@@ -46,7 +46,7 @@
       gateDirect: 'Réserver sur calendly.com',
       gateClose: 'Fermer',
       showCookies: 'Voir les cookies',
-      vercelNote: 'Les statistiques de fréquentation Vercel n’utilisent aucun cookie.',
+      vercelNote: 'Les statistiques de fréquentation Vercel et PostHog n’utilisent aucun cookie.',
       cookies: {
         necessary: [
           ['greenance_consent', 'Mémorise vos choix de cookies', '6 mois'],
@@ -82,7 +82,7 @@
       gateDirect: 'Book on calendly.com',
       gateClose: 'Close',
       showCookies: 'Show cookies',
-      vercelNote: 'Vercel visit statistics do not use any cookie.',
+      vercelNote: 'Vercel and PostHog visit statistics do not use any cookie.',
       cookies: {
         necessary: [
           ['greenance_consent', 'Remembers your cookie choices', '6 months'],
