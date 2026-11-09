@@ -301,7 +301,7 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
 class Component extends DCLogic {
   T = {
     fr: {
-      navSolution:"La Solution", 
+      navSolution:"La Solution", pageTitle:"Ressources : Risque Nature et Réglementation | Greenance", 
       footColPlatform:"Plateforme", footColCompany:"Entreprise", footAll:"Tous les articles", footGlossary:"Glossaire", 
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources", demoCta:"Réserver une démo",
       resEyebrow:"Ressources", resTitle:"Ressources",
@@ -322,7 +322,7 @@ class Component extends DCLogic {
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
     },
     en: {
-      navSolution:"The Solution", 
+      navSolution:"The Solution", pageTitle:"Resources: Nature Risk and Regulation | Greenance", 
       footColPlatform:"Platform", footColCompany:"Company", footAll:"All articles", footGlossary:"Glossary", 
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources", demoCta:"Book a demo",
       resEyebrow:"Resources", resTitle:"Resources",
@@ -389,7 +389,7 @@ class Component extends DCLogic {
         a.setAttribute('href', l === 'en' ? a.getAttribute('data-href-en') : a.getAttribute('data-href-fr'));
       });
       setActive(l); window.__gnBrand && window.__gnBrand();
-      try { document.documentElement.lang = l; } catch (e) {}
+      try { document.documentElement.lang = l; if (dict.pageTitle) document.title = dict.pageTitle; } catch (e) {}
     };
 
     const frBtn = document.getElementById('lang-fr'), enBtn = document.getElementById('lang-en');

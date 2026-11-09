@@ -514,7 +514,7 @@ a:hover{color:#41805A;}
 class Component extends DCLogic {
   T = {
     fr: {
-      navSolution:"La Solution", 
+      navSolution:"La Solution", pageTitle:"Greenance | Risque Nature pour le Crédit Bancaire", 
       
       
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources",
@@ -568,7 +568,7 @@ class Component extends DCLogic {
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
     },
     en: {
-      navSolution:"The Solution", 
+      navSolution:"The Solution", pageTitle:"Greenance | Nature Risk for Bank Lending", 
       
       
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources",
@@ -655,7 +655,7 @@ class Component extends DCLogic {
       document.querySelectorAll('[data-i18n]').forEach(el => { const k = el.getAttribute('data-i18n'); if (d[k] != null) el.textContent = d[k]; });
       document.querySelectorAll('[data-i18n-html]').forEach(el => { const k = el.getAttribute('data-i18n-html'); if (d[k] != null) el.innerHTML = d[k]; });
       setActive(l); window.__gnBrand && window.__gnBrand();
-      try { document.documentElement.lang = l; } catch (e) {}
+      try { document.documentElement.lang = l; if (d.pageTitle) document.title = d.pageTitle; } catch (e) {}
     };
     const frBtn = document.getElementById('lang-fr'), enBtn = document.getElementById('lang-en');
     if (frBtn) frBtn.addEventListener('click', () => apply('fr'));
