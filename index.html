@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Greenance — Risque Nature pour le Crédit Bancaire</title>
-<meta name="description" content="Greenance évalue en quelques minutes la dépendance des actifs d'une entreprise aux ressources naturelles et produit des scores exploitables en comité de crédit.">
+<meta name="description" content="Greenance évalue instantanément la dépendance de chaque site de vos emprunteurs à l'eau, au sol, à la biodiversité et aux aléas physiques, et produit un rapport sourcé pour le comité de crédit.">
 <link rel="canonical" href="https://greenance.fr/">
 <style>x-dc{display:none!important}</style>
 <link href="assets/fonts/fonts.css" rel="stylesheet">
@@ -93,13 +93,13 @@ a:hover{color:#41805A;}
 .navlink{color:#2A302B;text-decoration:none;font-size:15px;font-weight:500;white-space:nowrap;transition:color .15s ease;}
 .navlink:hover{color:#5A9E6F;}
 .pill{white-space:nowrap;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;}
-.pill:hover{transform:translateY(-2px);background:#4A8C5E !important;box-shadow:0 18px 36px -10px rgba(90,158,111,0.6) !important;color:#fff !important;}
+.pill:hover{transform:translateY(-2px);background:#4A8C5E !important;box-shadow:0 18px 36px -10px rgba(90,158,111,0.6) !important;color:#fff !important;}
 .card{transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .35s ease;}
-.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(30,60,40,0.28) !important;}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(30,60,40,0.28) !important;}
 .card:hover .arr{transform:translateX(5px);}
 .arr{display:inline-block;transition:transform .25s ease;}
 .linkrow a{transition:color .15s ease;}
-.linkrow a:hover{color:#3DDC84 !important;}
+.linkrow a:hover{color:#3DDC84 !important;}
 .mobile-panel{display:none;}
 .mobile-panel.open{display:flex;}
 .nav-burger{display:none;}
@@ -111,8 +111,8 @@ a:hover{color:#41805A;}
 @keyframes drift{0%,100%{transform:translateX(0);}50%{transform:translateX(-30px);}}
 @keyframes pulsering{0%{transform:scale(1);opacity:.55;}70%{transform:scale(2.6);opacity:0;}100%{opacity:0;}}
 .pring{animation:pulsering 2.6s ease-out infinite;}
-@media(max-width:1120px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
-@media(max-width:860px){.stagger{margin-left:0 !important;}}
+@media(max-width:1120px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
+@media(max-width:860px){.stagger{margin-left:0 !important;}}
 </style>
 </helmet>
 
@@ -165,8 +165,8 @@ a:hover{color:#41805A;}
     <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:clamp(40px,6vw,72px);align-items:center;position:relative;">
       <div data-reveal="">
         <h1 data-i18n-html="heroHeadline" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(44px,6.2vw,84px);line-height:1.04;letter-spacing:-0.035em;margin:0 0 30px;text-wrap:balance;">Le risque nature se joue au site, <span style="color:#5A9E6F;">pas au siège.</span></h1>
-        <p data-i18n-html="heroSub" style="font-size:clamp(17px,1.6vw,21px);line-height:1.6;color:#4B5563;margin:0 0 40px;max-width:560px;text-wrap:pretty;">Greenance analyse <strong style="color:#41805A;">en quelques minutes</strong> les dépendances aux ressources naturelles des actifs d'une entreprise et les traduit en scores exploitables directement en comité de crédit.</p>
-        <a href="#demo" class="pill" style="display:inline-flex;align-items:center;gap:12px;background:#5A9E6F;color:#fff;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;padding:20px 34px;border-radius:100px;box-shadow:0 16px 34px -12px rgba(90,158,111,0.6);"><span data-i18n="demoCta">Réserver une démo</span><span>→</span></a>
+        <p data-i18n="heroSub" style="font-size:clamp(17px,1.6vw,21px);line-height:1.6;color:#4B5563;margin:0 0 40px;max-width:560px;text-wrap:pretty;">Greenance mesure la dépendance de chaque site de vos emprunteurs à l'eau, au sol, à la biodiversité et aux aléas physiques, et vous livre un signal de crédit sourcé, prêt pour le comité.</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px;"><a href="#demo" class="pill" style="display:inline-flex;align-items:center;gap:12px;background:#5A9E6F;color:#fff;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;padding:20px 34px;border-radius:100px;box-shadow:0 16px 34px -12px rgba(90,158,111,0.6);"><span data-i18n="demoCta">Réserver une démo</span><span>→</span></a><a href="mailto:balthazar.courtois@greenance.fr?subject=Analyse%20d%27un%20site" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#121512;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;font-weight:700;padding:18px 26px;border-radius:100px;box-shadow:0 10px 24px -16px rgba(30,60,40,0.45);"><span data-i18n="heroCta2">Recevoir l'analyse d'un site</span></a></div>
       </div>
 
       <!-- floating visual -->
@@ -185,33 +185,20 @@ a:hover{color:#41805A;}
             <div style="background:#fff;border-radius:24px;box-shadow:0 40px 80px -30px rgba(25,55,35,0.35),0 10px 30px -14px rgba(25,55,35,0.15);overflow:hidden;">
               <div style="display:flex;align-items:center;gap:10px;padding:16px 20px;border-bottom:1px solid #EEF1EE;">
                 <span style="position:relative;width:9px;height:9px;"><span class="pring" style="position:absolute;inset:0;border-radius:50%;background:#5A9E6F;"></span><span style="position:absolute;inset:0;border-radius:50%;background:#5A9E6F;"></span></span>
-                <span data-i18n="panelSite" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;">Aciérie · Fos-sur-Mer, FR</span>
+                <span data-i18n="panelSite" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:14px;">Exemple illustratif · Site sidérurgique, sud de la France</span>
               </div>
-              <div style="padding:22px 20px 24px;display:flex;flex-direction:column;align-items:center;">
-                <div style="position:relative;width:132px;height:132px;margin-bottom:14px;">
-                  <svg width="132" height="132" viewBox="0 0 160 160" style="display:block;transform:rotate(-90deg);">
-                    <circle cx="80" cy="80" r="68" fill="none" stroke="#EEF2EE" stroke-width="12"></circle>
-                    <circle data-gauge="" data-pct="43" cx="80" cy="80" r="68" fill="none" stroke="#5A9E6F" stroke-width="12" stroke-linecap="round" stroke-dasharray="427.26" stroke-dashoffset="427.26"></circle>
-                  </svg>
-                  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-                    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:40px;line-height:1;"><span data-counter="" data-target="43">43</span></div>
-                    <div style="font-size:11px;color:#9CA3AF;margin-top:2px;">/ 100</div>
-                  </div>
-                </div>
-                <div data-i18n="panelScoreLabel" style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#9CA3AF;margin-bottom:8px;">Score de vulnérabilité nature</div>
-                <div style="display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border-radius:100px;background:#FBEDE2;margin-bottom:18px;">
-                  <span style="width:7px;height:7px;border-radius:50%;background:#D98A3D;"></span><span data-i18n="panelRisk" style="font-size:12.5px;font-weight:600;color:#A65D1E;">Vulnérabilité modérée</span>
-                </div>
+              <div style="padding:22px 20px 52px;display:flex;flex-direction:column;align-items:center;">
+                <div data-i18n="panelScoreLabel" style="font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#9CA3AF;margin-bottom:16px;">Score de vulnérabilité nature</div>
                 <div style="width:100%;display:flex;flex-direction:column;gap:10px;">
-                  <div><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;"><span data-i18n="panelWater" style="color:#4B5563;">Eau</span><b>54</b></div><div style="height:6px;border-radius:6px;background:#EEF2EE;overflow:hidden;"><div data-bar="" data-fill="54" style="height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#5A9E6F,#3DDC84);"></div></div></div>
-                  <div><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;"><span data-i18n="panelSoil" style="color:#4B5563;">Sol</span><b>43</b></div><div style="height:6px;border-radius:6px;background:#EEF2EE;overflow:hidden;"><div data-bar="" data-fill="43" style="height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#5A9E6F,#3DDC84);"></div></div></div>
-                  <div><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;"><span data-i18n="panelBio" style="color:#4B5563;">Biodiversité</span><b>32</b></div><div style="height:6px;border-radius:6px;background:#EEF2EE;overflow:hidden;"><div data-bar="" data-fill="32" style="height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#5A9E6F,#3DDC84);"></div></div></div>
+                  <div><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;"><span data-i18n="panelWater" style="color:#4B5563;">Eau</span><b>64</b></div><div style="height:6px;border-radius:6px;background:#EEF2EE;overflow:hidden;"><div data-bar="" data-fill="64" style="height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#5A9E6F,#3DDC84);"></div></div></div>
+                  <div><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;"><span data-i18n="panelSoil" style="color:#4B5563;">Sol</span><b>38</b></div><div style="height:6px;border-radius:6px;background:#EEF2EE;overflow:hidden;"><div data-bar="" data-fill="38" style="height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#5A9E6F,#3DDC84);"></div></div></div>
+                  <div><div style="display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:5px;"><span data-i18n="panelBio" style="color:#4B5563;">Biodiversité</span><b>47</b></div><div style="height:6px;border-radius:6px;background:#EEF2EE;overflow:hidden;"><div data-bar="" data-fill="47" style="height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,#5A9E6F,#3DDC84);"></div></div></div>
                 </div>
               </div>
             </div>
             <div style="position:absolute;right:-26px;bottom:-22px;background:#121512;color:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 20px 40px -18px rgba(0,0,0,0.5);animation:floaty2 5s ease-in-out infinite;">
               <div style="font-size:10.5px;letter-spacing:0.08em;text-transform:uppercase;color:#9DA49F;margin-bottom:4px;">Signal</div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;color:#3DDC84;">GO</div>
+              <div data-i18n="panelSignal" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;color:#E8933A;">À surveiller</div>
             </div>
           </div>
         </div>
@@ -219,49 +206,50 @@ a:hover{color:#41805A;}
     </div>
   </section>
 
-  <!-- AUDIENCES -->
+  <!-- POUR QUI -->
   <section style="position:relative;z-index:2;padding:0 28px clamp(72px,9vw,120px);">
     <div style="max-width:1240px;margin:0 auto;">
-      <div data-reveal="" style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+      <div data-reveal="" style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
         <span data-anchor="" style="width:14px;height:14px;border-radius:50%;background:#5A9E6F;box-shadow:0 0 0 5px rgba(90,158,111,0.15);flex:none;"></span>
-        <span data-i18n="audLabel" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;">Avec qui nous travaillons</span>
+        <span data-i18n="audLabel" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;">Pour qui</span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:24px;">
-        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:300px;">
+      <h2 data-i18n="audTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,44px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 32px;text-wrap:balance;" data-reveal="">Pour les équipes crédit et risques des banques</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px;">
+        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:260px;">
           <span style="width:8px;height:8px;border-radius:50%;background:#5A9E6F;"></span>
-          <div data-i18n="aud1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Banques commerciales</div>
-          <p data-i18n="aud1Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Un signal nature standardisé, traçable et défendable en comité de crédit.</p>
+          <div data-i18n="aud1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Analystes crédit</div>
+          <p data-i18n="aud1Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Un rapport par site, à verser directement au dossier.</p>
           <span class="arr" style="margin-top:auto;color:#5A9E6F;font-size:20px;">→</span>
         </a>
-        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:300px;">
+        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:260px;">
           <span style="width:8px;height:8px;border-radius:50%;background:#5A9E6F;"></span>
-          <div data-i18n="otherTag1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Gérants d'actifs</div>
-          <p data-i18n="aud2Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Une due diligence nature qui couvre un portefeuille entier.</p>
+          <div data-i18n="aud2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Directions des risques</div>
+          <p data-i18n="aud2Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Une méthode documentée, que vous pouvez présenter au superviseur.</p>
           <span class="arr" style="margin-top:auto;color:#5A9E6F;font-size:20px;">→</span>
         </a>
-        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:300px;">
+        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:260px;">
           <span style="width:8px;height:8px;border-radius:50%;background:#5A9E6F;"></span>
-          <div data-i18n="otherTag2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Fonds d'infrastructure</div>
-          <p data-i18n="aud3Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Une lecture actif par actif des dépendances aux ressources locales.</p>
-          <span class="arr" style="margin-top:auto;color:#5A9E6F;font-size:20px;">→</span>
-        </a>
-        <a data-reveal="" href="#pourqui" class="card" style="display:flex;flex-direction:column;gap:14px;padding:30px 28px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);min-height:300px;">
-          <span style="width:8px;height:8px;border-radius:50%;background:#5A9E6F;"></span>
-          <div data-i18n="otherTag3" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Assureurs crédit</div>
-          <p data-i18n="aud4Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Des scores et seuils paramétrés selon votre mandat.</p>
+          <div data-i18n="aud3" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:22px;line-height:1.2;">Équipes ESG et conformité</div>
+          <p data-i18n="aud3Body" style="font-size:15.5px;line-height:1.6;color:#4B5563;margin:0;">Une lecture du portefeuille structurée selon l'approche TNFD/LEAP.</p>
           <span class="arr" style="margin-top:auto;color:#5A9E6F;font-size:20px;">→</span>
         </a>
       </div>
+      <a data-reveal="" href="solution.html" data-i18n="audMore" style="display:inline-block;margin-top:26px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15.5px;color:#41805A;text-decoration:none;">Également disponible pour les gérants d'actifs et les fonds d'investissement →</a>
     </div>
   </section>
 
-  <!-- STORY PATH -->
+  <!-- CE QUI A CHANGE -->
   <section id="pourquoi" style="position:relative;z-index:2;scroll-margin-top:90px;padding:clamp(40px,5vw,72px) 28px clamp(80px,10vw,140px);">
     <svg viewBox="0 0 1440 400" preserveAspectRatio="none" style="position:absolute;left:0;top:34%;width:120%;height:420px;pointer-events:none;animation:drift 18s ease-in-out infinite;">
       <path d="M0 200 C 240 80, 480 80, 720 200 S 1200 320, 1440 180 L 1440 400 L 0 400 Z" fill="#5A9E6F" fill-opacity="0.05"></path>
       <path d="M0 230 C 260 120, 520 110, 760 230 S 1220 330, 1440 210" fill="none" stroke="#5A9E6F" stroke-opacity="0.12" stroke-width="1.5"></path>
     </svg>
-    <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(90px,11vw,160px);position:relative;">
+    <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(70px,9vw,130px);position:relative;">
+
+      <div data-reveal="" style="max-width:760px;">
+        <div data-i18n="ebChange" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">Ce qui a changé</div>
+        <h2 data-i18n="chgTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-0.035em;margin:0;text-wrap:balance;">Le risque nature entre dans l'analyse crédit.</h2>
+      </div>
 
       <div class="stagger" data-story="" style="display:flex;gap:28px;max-width:640px;margin-left:0;">
         <div style="position:relative;flex:none;width:20px;">
@@ -269,9 +257,8 @@ a:hover{color:#41805A;}
           <span data-line="" style="position:absolute;top:30px;left:9px;width:2px;height:0;background:#5A9E6F;"></span>
         </div>
         <div data-reveal="">
-          <div data-i18n="ebProblem" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">Le problème</div>
-          <h2 data-i18n="problemTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,3.8vw,50px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 24px;text-wrap:balance;">Les banques naviguent à l'aveugle sur le risque nature.</h2>
-          <p data-i18n="p1Body" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;">Les outils existants opèrent au niveau de l'émetteur ou du groupe. Mais le risque se matérialise sur le site, pas au siège social.</p>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,3.2vw,42px);line-height:1.12;letter-spacing:-0.03em;margin:0 0 20px;text-wrap:balance;"><a href="reglementation-bce-2026.html" data-i18n="chg1Title" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(90,158,111,0.5);text-underline-offset:6px;">Le superviseur le demande.</a></h3>
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><span data-i18n="chg1Body">La BCE et l'EBA attendent désormais que les banques évaluent le risque nature dans leurs décisions de crédit, avec une méthode qu'elles peuvent expliquer.</span></p>
         </div>
       </div>
 
@@ -281,9 +268,8 @@ a:hover{color:#41805A;}
           <span data-line="" style="position:absolute;top:30px;left:9px;width:2px;height:0;background:#5A9E6F;"></span>
         </div>
         <div data-reveal="">
-          <div data-i18n="ebCost" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">Le coût</div>
-          <h2 data-i18n="p2Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,3.8vw,50px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 24px;text-wrap:balance;">Des processus manuels qui prennent des jours</h2>
-          <p data-i18n="p2Body" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;">Sans outil adapté, un analyste crédit reconstitue manuellement l'exposition environnementale d'un site, source par source, sans garantie de cohérence.</p>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,3.2vw,42px);line-height:1.12;letter-spacing:-0.03em;margin:0 0 20px;text-wrap:balance;"><span data-i18n="chg2Title">Il se joue sur le site.</span></h3>
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><span data-i18n="chg2Body">Une même entreprise peut avoir une usine en zone de sécheresse et une autre sans aucune tension. Connaître son secteur ne suffit pas, il faut regarder chaque site.</span></p>
         </div>
       </div>
 
@@ -293,53 +279,11 @@ a:hover{color:#41805A;}
           <span data-line="" style="position:absolute;top:30px;left:9px;width:2px;height:0;background:#5A9E6F;"></span>
         </div>
         <div data-reveal="">
-          <div data-i18n="ebUrgency" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">L'urgence</div>
-          <h2 data-i18n="p3Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,3.8vw,50px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 24px;text-wrap:balance;">Une pression réglementaire croissante</h2>
-          <p data-i18n="p3Body" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;">La BCE attend des établissements qu'ils comblent leurs lacunes en données nature avant 2027. Les sanctions prudentielles sont réelles et documentées.</p>
+          <h3 style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(28px,3.2vw,42px);line-height:1.12;letter-spacing:-0.03em;margin:0 0 20px;text-wrap:balance;"><span data-i18n="chg3Title">Et cela prend des jours.</span></h3>
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><span data-i18n="chg3Body">Retrouver les sites, rassembler les données, les interpréter : sans outil, un analyste y passe plusieurs jours par dossier. Le manque de données fiables à l'échelle du site est le premier frein cité dans notre Baromètre 2026.</span> <a href="barometre-2026-risques-nature-analyse-credit.html" data-i18n="chgStudy" style="font-weight:700;color:#41805A;text-decoration:none;white-space:nowrap;">Lire l'étude →</a></p>
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- FIGURES CARD -->
-  <section style="position:relative;z-index:2;padding:0 28px clamp(80px,10vw,140px);">
-    <span data-anchor="" style="position:absolute;top:-50px;left:50%;width:0;height:0;"></span>
-    <div data-reveal="" style="max-width:1240px;margin:0 auto;">
-      <div data-parallax="0.04" style="background:#fff;border-radius:32px;box-shadow:0 40px 90px -50px rgba(30,60,40,0.35);overflow:hidden;">
-        <div style="padding:clamp(32px,4vw,56px);">
-          <div data-i18n="ebFigures" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:40px;">Chiffres clés</div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:32px;">
-            <div style="padding-right:24px;border-right:1px solid #EEF1EE;">
-              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="150">150</span>+</div>
-              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
-              <div data-i18n="heroStat1" style="font-size:16px;line-height:1.55;color:#4B5563;">actifs analysés en quelques minutes</div>
-            </div>
-            <div style="padding-right:24px;border-right:1px solid #EEF1EE;">
-              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="30">30</span>s</div>
-              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
-              <div data-i18n="f1Label" style="font-size:16px;line-height:1.55;color:#4B5563;">pour compléter votre évaluation du risque nature</div>
-            </div>
-            <div style="padding-right:24px;border-right:1px solid #EEF1EE;">
-              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10"></path><path d="M9 20v-6h6v6"></path></svg></div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="70">70</span>+</div>
-              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
-              <div data-i18n="f3Label" style="font-size:16px;line-height:1.55;color:#4B5563;">entretiens de validation avec des professionnels de banques européennes</div>
-            </div>
-            <div>
-              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
-              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="100">100</span>%</div>
-              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
-              <div data-i18n="heroStat3" style="font-size:16px;line-height:1.55;color:#4B5563;">aligné sur la TNFD et les attentes des régulateurs</div>
-            </div>
-          </div>
-        </div>
-        <div style="background:#F4F8F5;padding:clamp(24px,3vw,36px) clamp(32px,4vw,56px);">
-          <p data-i18n="s4Body" style="margin:0;padding-left:22px;border-left:4px solid #5A9E6F;font-size:clamp(17px,1.6vw,21px);line-height:1.55;color:#2A302B;">Structure élaborée autour du cadre TNFD/LEAP, compatible avec les attentes des régulateurs.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -354,34 +298,46 @@ a:hover{color:#41805A;}
       </div>
       <div data-reveal="">
         <div data-i18n="ebSolution" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:20px;">La solution</div>
-        <h2 data-i18n="solTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(34px,4.4vw,60px);line-height:1.06;letter-spacing:-0.035em;margin:0 0 28px;text-wrap:balance;">Greenance analyse des centaines d'actifs en quelques minutes.</h2>
-        <p data-i18n="solSub" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0 0 36px;">L'IA de Greenance géolocalise automatiquement chaque site, croise sa position GPS avec les bases de données environnementales mondiales et génère un score de vulnérabilité nature structuré, mais aussi une analyse qualitative lisible par n'importe quel analyste, sans formation préalable.</p>
+        <h2 data-i18n="solTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(34px,4.4vw,60px);line-height:1.06;letter-spacing:-0.035em;margin:0 0 28px;text-wrap:balance;">Vos analystes ne cherchent plus la donnée. Ils décident.</h2>
+        <p data-i18n="solSub" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0 0 36px;">Greenance retrouve les sites d'une entreprise à partir de son nom, ou de votre propre liste, et croise chacun avec son environnement local. Le score est calculé par une méthode déterministe et documentée. L'IA sert à localiser les sites et à rédiger l'analyse ; elle ne calcule jamais le score.</p>
         <a href="methodologie.html" class="pill" style="display:inline-flex;align-items:center;gap:12px;background:#5A9E6F;color:#fff;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;padding:19px 32px;border-radius:100px;box-shadow:0 16px 34px -12px rgba(90,158,111,0.6);"><span data-i18n="discover">Découvrir la méthodologie</span><span>→</span></a>
       </div>
     </div>
   </section>
 
-  <!-- ESSENTIALS -->
+  <!-- CHIFFRES CLES -->
   <section style="position:relative;z-index:2;padding:0 28px clamp(80px,10vw,140px);">
-    <span data-anchor="" style="position:absolute;top:-50px;left:8%;width:0;height:0;"></span>
-    <div style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(40px,6vw,80px);align-items:center;">
-      <div data-reveal="">
-        <div data-i18n="ebEssential" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">L'essentiel</div>
-        <h2 data-i18n-html="essTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-0.035em;margin:0 0 28px;">Greenance<br>en bref</h2>
-        <div style="width:64px;height:4px;border-radius:4px;background:#5A9E6F;"></div>
-      </div>
-      <div style="grid-column:span 1;display:flex;flex-direction:column;min-width:0;">
-        <div data-reveal="" style="display:flex;gap:28px;padding:0 0 32px;border-bottom:1px solid rgba(18,21,18,0.08);">
-          <div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:12px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;color:#5A9E6F;">01</span><span data-float="" style="width:52px;height:52px;border-radius:15px;background:#5A9E6F;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 26px -10px rgba(90,158,111,0.7);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></span></div>
-          <div><h3 data-i18n="s1Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin:4px 0 12px;">Géolocalisation IA</h3><p data-i18n="s1Body" style="font-size:16.5px;line-height:1.7;color:#4B5563;margin:0;">Identification automatique de chaque site à partir du nom de l'entreprise. Aucune saisie manuelle requise.</p></div>
-        </div>
-        <div data-reveal="" style="display:flex;gap:28px;padding:32px 0;border-bottom:1px solid rgba(18,21,18,0.08);">
-          <div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:12px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;color:#5A9E6F;">02</span><span data-float="" style="width:52px;height:52px;border-radius:15px;background:#5A9E6F;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 26px -10px rgba(90,158,111,0.7);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M4 16a8 8 0 0 1 16 0"></path><path d="M12 16l4-5"></path></svg></span></div>
-          <div><h3 data-i18n="s2Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin:4px 0 12px;">Score de vulnérabilité nature</h3><p data-i18n="s2Body" style="font-size:16.5px;line-height:1.7;color:#4B5563;margin:0;">Croisement de l'exposition physique locale avec les dépendances sectorielles aux services écosystémiques : eau, sol, biodiversité.</p></div>
-        </div>
-        <div data-reveal="" style="display:flex;gap:28px;padding:32px 0 0;">
-          <div style="flex:none;display:flex;flex-direction:column;align-items:center;gap:12px;"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;color:#5A9E6F;">03</span><span data-float="" style="width:52px;height:52px;border-radius:15px;background:#5A9E6F;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 26px -10px rgba(90,158,111,0.7);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7z"></path><path d="M10 13l2 2 3-4"></path></svg></span></div>
-          <div><h3 data-i18n="s3Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:24px;margin:4px 0 12px;">Outputs prêts pour la décision</h3><p data-i18n="s3Body" style="font-size:16.5px;line-height:1.7;color:#4B5563;margin:0;">Flags GO/NO-GO, interprétation qualitative, recommandations de covenants, exports PDF structurés pour comités de crédit.</p></div>
+    <span data-anchor="" style="position:absolute;top:-50px;left:50%;width:0;height:0;"></span>
+    <div data-reveal="" style="max-width:1240px;margin:0 auto;">
+      <div data-parallax="0.04" style="background:#fff;border-radius:32px;box-shadow:0 40px 90px -50px rgba(30,60,40,0.35);overflow:hidden;">
+        <div style="padding:clamp(32px,4vw,56px);">
+          <div data-i18n="ebFigures" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:40px;">Chiffres clés</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:32px;">
+            <div style="padding-right:24px;border-right:1px solid #EEF1EE;">
+              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg></div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="30">30</span></div>
+              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
+              <div data-i18n="fig1Label" style="font-size:16px;line-height:1.55;color:#4B5563;">sources de données publiques croisées pour chaque site</div>
+            </div>
+            <div style="padding-right:24px;border-right:1px solid #EEF1EE;">
+              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"></circle><path d="M12 7.5V12l3 2"></path></svg></div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="1">1</span></div>
+              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
+              <div data-i18n="fig2Label" style="font-size:16px;line-height:1.55;color:#4B5563;">rapport par site et par entreprise, prêt pour le comité de crédit</div>
+            </div>
+            <div style="padding-right:24px;border-right:1px solid #EEF1EE;">
+              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg></div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="100">100</span><span data-i18n="figPct"> %</span></div>
+              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
+              <div data-i18n="fig3Label" style="font-size:16px;line-height:1.55;color:#4B5563;">des scores reliés à leur source et à leur méthode</div>
+            </div>
+            <div>
+              <div style="width:52px;height:52px;border-radius:14px;background:#EAF4ED;display:flex;align-items:center;justify-content:center;margin-bottom:26px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A9E6F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10"></path><path d="M9 20v-6h6v6"></path></svg></div>
+              <div style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(56px,6vw,76px);line-height:1;letter-spacing:-0.04em;"><span data-counter="" data-target="70">70</span>+</div>
+              <div style="width:40px;height:3px;border-radius:3px;background:#5A9E6F;margin:18px 0;"></div>
+              <div data-i18n="fig4Label" style="font-size:16px;line-height:1.55;color:#4B5563;">professionnels bancaires consultés pour la méthode</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -398,18 +354,18 @@ a:hover{color:#41805A;}
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;">
         <div data-reveal="" class="card" style="background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px;"><span style="width:40px;height:40px;border-radius:50%;background:#EAF4ED;color:#41805A;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;">1</span><span data-i18n="step1" style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#9CA3AF;">Étape 1</span></div>
-          <h3 data-i18n="h1Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:0 0 12px;">Import</h3>
-          <p data-i18n="h1Body" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">Chargez votre liste d'actifs ou entrez un nom d'entreprise. Greenance identifie automatiquement les actifs et les géolocalise.</p>
+          <h3 data-i18n="h1Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:0 0 12px;">Localiser.</h3>
+          <p data-i18n="h1Body" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">Entrez un nom d'entreprise ou importez votre liste. Greenance identifie et géolocalise ses sites physiques : usines, entrepôts, bureaux, exploitations.</p>
         </div>
         <div data-reveal="" class="card" style="background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px;"><span style="width:40px;height:40px;border-radius:50%;background:#EAF4ED;color:#41805A;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;">2</span><span data-i18n="step2" style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#9CA3AF;">Étape 2</span></div>
-          <h3 data-i18n="h2Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:0 0 12px;">Analyse</h3>
-          <p data-i18n="h2Body" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">Notre moteur IA croise chaque site avec les bases de données environnementales mondiales en temps réel : stress hydrique, sécheresse, inondations, qualité des sols, érosion, zones protégées, biodiversité, dépendances sectorielles.</p>
+          <h3 data-i18n="h2Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:0 0 12px;">Évaluer.</h3>
+          <p data-i18n="h2Body" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">Pour chaque site, Greenance analyse l'eau, le sol, la biodiversité et les aléas physiques alentour, au regard de ce dont son activité dépend.</p>
         </div>
         <div data-reveal="" class="card" style="background:#5A9E6F;color:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 24px 50px -28px rgba(90,158,111,0.7);">
           <div style="display:flex;align-items:center;gap:12px;margin-bottom:26px;"><span style="width:40px;height:40px;border-radius:50%;background:#fff;color:#41805A;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;">3</span><span data-i18n="step3" style="font-size:13px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#fff;">Étape 3</span></div>
-          <h3 data-i18n="h3Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:0 0 12px;">Output</h3>
-          <p data-i18n="h3Body" style="font-size:16px;line-height:1.65;color:#fff;margin:0;">Vous recevez un score structuré, une analyse IA, un rapport PDF, et des flags directement intégrables dans votre processus de crédit ou votre comité de risque.</p>
+          <h3 data-i18n="h3Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:26px;margin:0 0 12px;">Décider.</h3>
+          <p data-i18n="h3Body" style="font-size:16px;line-height:1.65;color:#fff;margin:0;">Vous recevez un rapport par site et par entreprise : le niveau de risque et le pilier qui le porte, une analyse rédigée, les questions clés à aborder avec l'emprunteur et des pistes de plans d'accompagnement.</p>
         </div>
       </div>
     </div>
@@ -424,47 +380,42 @@ a:hover{color:#41805A;}
       </div>
       <div data-reveal="">
         <div data-i18n="ebWho" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">Cas d'usage</div>
-        <h2 data-i18n="w1Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,3.8vw,50px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 24px;text-wrap:balance;">Banques commerciales · crédit et risque</h2>
-        <p data-i18n="w1Body" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0 0 28px;">Greenance s'intègre directement dans le processus de financement : de l'instruction du dossier à la décision, vos équipes disposent d'un signal nature standardisé, traçable et défendable en comité, sans charge de travail supplémentaire.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;">
-          <span data-i18n="wPt1" style="font-size:14.5px;font-weight:600;color:#2F4A3A;background:#fff;border-radius:100px;padding:10px 18px;box-shadow:0 8px 20px -14px rgba(30,60,40,0.4);">Décision d'octroi défendable</span>
-          <span data-i18n="wPt2" style="font-size:14.5px;font-weight:600;color:#2F4A3A;background:#fff;border-radius:100px;padding:10px 18px;box-shadow:0 8px 20px -14px rgba(30,60,40,0.4);">Intégré au processus de crédit</span>
-          <span data-i18n="wPt3" style="font-size:14.5px;font-weight:600;color:#2F4A3A;background:#fff;border-radius:100px;padding:10px 18px;box-shadow:0 8px 20px -14px rgba(30,60,40,0.4);">Aligné sur la TNFD et les attentes des régulateurs</span>
-        </div>
-        <div style="margin-top:48px;padding-top:40px;border-top:1px solid rgba(18,21,18,0.08);">
-          <h3 data-i18n="adaptTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(30px,3.4vw,44px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 12px;">Mais pas que.</h3>
-          <p data-i18n="adaptSub" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;font-size:clamp(18px,1.8vw,22px);line-height:1.45;color:#41805A;margin:0 0 26px;">L'IA de Greenance s'adapte à votre métier, et son interprétation avec.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:10px;"><span data-i18n="jobAm" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:#fff;background:#121512;border-radius:100px;padding:13px 22px;">Asset managers</span><span data-i18n="jobPe" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:#fff;background:#121512;border-radius:100px;padding:13px 22px;">Fonds de private equity</span><span data-i18n="jobInfra" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:#fff;background:#121512;border-radius:100px;padding:13px 22px;">Fonds d'infrastructure</span><span data-i18n="jobEsg" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;color:#fff;background:#121512;border-radius:100px;padding:13px 22px;">Conseil ESG</span></div>
+        <h2 data-i18n="w1Title" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(32px,3.8vw,50px);line-height:1.1;letter-spacing:-0.03em;margin:0 0 24px;text-wrap:balance;">Là où vos décisions se prennent</h2>
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><strong data-i18n="use1L" style="color:#121512;">Instruction de crédit :</strong> <span data-i18n="use1B">un signal nature dans chaque dossier, PME comprises.</span></p>
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><strong data-i18n="use2L" style="color:#121512;">Revue annuelle :</strong> <span data-i18n="use2B">le même référentiel d'une année sur l'autre.</span></p>
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><strong data-i18n="use3L" style="color:#121512;">Dialogue avec l'emprunteur :</strong> <span data-i18n="use3B">les questions clés à poser et les plans d'accompagnement à construire ensemble.</span></p>
+          <p style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;"><strong data-i18n="use4L" style="color:#121512;">Contrôle et reporting :</strong> <span data-i18n="use4B">une méthode traçable pour le superviseur et le reporting TNFD.</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
+  <!-- SUR LE TERRAIN -->
   <section id="press-section" style="position:relative;z-index:2;padding:0 28px clamp(80px,10vw,140px);">
     <span data-anchor="" style="position:absolute;top:-50px;left:12%;width:0;height:0;"></span>
     <div style="max-width:1240px;margin:0 auto;">
-      <div data-reveal="" style="margin-bottom:44px;">
-        <div data-i18n="ebPress" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">Témoignages</div>
-        <h2 data-i18n-html="pressTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-0.035em;margin:0;">Greenance<br>au quotidien.</h2>
+      <div data-reveal="" style="margin-bottom:40px;max-width:820px;">
+        <div data-i18n="ebField" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A9E6F;margin-bottom:18px;">Sur le terrain</div>
+        <h2 data-i18n="fieldTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.4vw,60px);line-height:1.05;letter-spacing:-0.035em;margin:0;text-wrap:balance;margin:0 0 24px;">Pontivy, juin 2026 : le risque nature n'est plus théorique</h2>
+        <p data-i18n="fieldBody" style="font-size:18px;line-height:1.7;color:#4B5563;margin:0;">Fin juin 2026, en pleine canicule, l'alimentation en eau de sept usines du bassin de Pontivy a été coupée pour préserver l'eau potable des habitants et de l'hôpital. Environ 1 500 salariés ont été placés en chômage technique.</p>
       </div>
+      <h3 data-i18n="fieldSub" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(22px,2.4vw,28px);line-height:1.2;letter-spacing:-0.02em;margin:0 0 22px;" data-reveal="">Ce que cela implique pour une banque</h3>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:24px;">
-        <figure data-reveal="" class="card" style="margin:0;display:flex;flex-direction:column;background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
-          <span data-i18n="uc1Tag" style="align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#41805A;background:#EAF4ED;border-radius:100px;padding:6px 13px;margin-bottom:22px;">Conseil &amp; ESG</span>
-          <blockquote data-i18n="uc1Quote" style="margin:0 0 28px;font-size:16.5px;line-height:1.65;color:#2A302B;">Avant Greenance, je passais des heures à rechercher manuellement des données par site pour construire mes diagnostics. Maintenant j'arrive chez le client avec une cartographie de ses expositions et des recommandations de mitigation prêtes. Ça change complètement la valeur de mes livrables.</blockquote>
-          <figcaption style="margin-top:auto;display:flex;align-items:center;gap:12px;"><span style="width:44px;height:44px;border-radius:50%;background:#EAF4ED;color:#41805A;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none;">AR</span><span><span style="display:block;font-weight:600;font-size:15px;">Antoine R.</span><span data-i18n="uc1Role" style="display:block;font-size:13px;color:#6B7280;line-height:1.4;">Responsable mission, cabinet de conseil en risques environnementaux</span></span></figcaption>
-        </figure>
-        <figure data-reveal="" class="card" style="margin:0;display:flex;flex-direction:column;background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
-          <span data-i18n="uc2Tag" style="align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#41805A;background:#EAF4ED;border-radius:100px;padding:6px 13px;margin-bottom:22px;">Banque commerciale</span>
-          <blockquote data-i18n="uc2Quote" style="margin:0 0 28px;font-size:16.5px;line-height:1.65;color:#2A302B;">On analysait une dizaine d'entreprises par semaine avec des sources disparates et sans standardisation. Aujourd'hui, on sait avant chaque dialogue ESG quels actifs sont les plus vulnérables et quels sujets aborder. On ne passe plus à côté de ce qui compte vraiment.</blockquote>
-          <figcaption style="margin-top:auto;display:flex;align-items:center;gap:12px;"><span style="width:44px;height:44px;border-radius:50%;background:#EAF4ED;color:#41805A;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none;">CF</span><span><span style="display:block;font-weight:600;font-size:15px;">Claire F.</span><span data-i18n="uc2Role" style="display:block;font-size:13px;color:#6B7280;line-height:1.4;">Analyste risques extra-financiers, banque commerciale</span></span></figcaption>
-        </figure>
-        <figure data-reveal="" class="card" style="margin:0;display:flex;flex-direction:column;background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
-          <span data-i18n="uc3Tag" style="align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#41805A;background:#EAF4ED;border-radius:100px;padding:6px 13px;margin-bottom:22px;">Gestion d'actifs</span>
-          <blockquote data-i18n="uc3Quote" style="margin:0 0 28px;font-size:16.5px;line-height:1.65;color:#2A302B;">La due diligence nature est devenue scalable. La géolocalisation automatique des actifs prend quelques minutes, on peut couvrir un portefeuille entier avec une profondeur qu'on ne pouvait pas atteindre manuellement avant.</blockquote>
-          <figcaption style="margin-top:auto;display:flex;align-items:center;gap:12px;"><span style="width:44px;height:44px;border-radius:50%;background:#EAF4ED;color:#41805A;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex:none;">HM</span><span><span style="display:block;font-weight:600;font-size:15px;">Hugo M.</span><span data-i18n="uc3Role" style="display:block;font-size:13px;color:#6B7280;line-height:1.4;">Responsable ESG, société de gestion</span></span></figcaption>
-        </figure>
+        <div data-reveal="" class="card" style="margin:0;display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
+          <h3 data-i18n="fi1t" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;margin:0;color:#121512;">Un risque invisible depuis le siège.</h3>
+          <p data-i18n="fi1b" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">Le secteur indique une dépendance à l'eau ; seule l'analyse du site montre que la ressource locale est sous tension. C'est le croisement des deux qui révèle le risque.</p>
+        </div>
+        <div data-reveal="" class="card" style="margin:0;display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
+          <h3 data-i18n="fi2t" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;margin:0;color:#121512;">Une perte d'exploitation directe.</h3>
+          <p data-i18n="fi2b" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">Une production à l'arrêt pèse immédiatement sur le chiffre d'affaires, et donc sur la capacité de remboursement.</p>
+        </div>
+        <div data-reveal="" class="card" style="margin:0;display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:24px;padding:34px 30px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
+          <h3 data-i18n="fi3t" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;margin:0;color:#121512;">Des questions qui pouvaient être posées avant.</h3>
+          <p data-i18n="fi3b" style="font-size:16px;line-height:1.65;color:#4B5563;margin:0;">D'où vient l'eau du site ? Existe-t-il une alternative ? Quel plan en cas de restriction ?</p>
+        </div>
       </div>
+      <a data-reveal="" href="https://www.processalimentaire.com/vie-des-iaa/restrictions-d-eau-plusieurs-sites-industriels-a-l-arret-dans-le-bassin-de-pontivy" target="_blank" rel="noopener" data-i18n="fieldLink" style="display:inline-block;margin-top:26px;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15.5px;color:#41805A;text-decoration:none;">Lire l'article de Process Alimentaire →</a>
     </div>
   </section>
 
@@ -480,19 +431,19 @@ a:hover{color:#41805A;}
         <a href="ressources.html" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;color:#41805A;text-decoration:none;white-space:nowrap;"><span data-i18n="resAll">Tous les articles</span> →</a>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px;">
+        <a data-reveal="" href="barometre-2026-risques-nature-analyse-credit.html" class="card" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;min-height:240px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
+          <span data-i18n="resStudyTag" style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A9E6F;">Étude</span>
+          <span data-i18n="resStudy" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;">Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit</span>
+          <span style="margin-top:auto;font-weight:600;font-size:14.5px;color:#41805A;"><span data-i18n="readStudy">Lire l'étude</span> <span class="arr">→</span></span>
+        </a>
         <a data-reveal="" href="reglementation-bce-2026.html" class="card" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;min-height:240px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
           <span data-i18n="res1Tag" style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A9E6F;">Réglementation</span>
-          <span data-i18n="res1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;">Réglementation BCE 2026 : risque nature et supervision bancaire</span>
+          <span data-i18n="res1" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;">Réglementation BCE 2026 : risque nature et supervision bancaire</span>
           <span style="margin-top:auto;font-weight:600;font-size:14.5px;color:#41805A;"><span data-i18n="readMore">Lire la suite</span> <span class="arr">→</span></span>
         </a>
         <a data-reveal="" href="tnfd-leap.html" class="card" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;min-height:240px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
           <span data-i18n="res2Tag" style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A9E6F;">Cadres</span>
-          <span data-i18n="res2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;">TNFD et LEAP : le cadre de référence du risque nature</span>
-          <span style="margin-top:auto;font-weight:600;font-size:14.5px;color:#41805A;"><span data-i18n="readMore">Lire la suite</span> <span class="arr">→</span></span>
-        </a>
-        <a data-reveal="" href="encore.html" class="card" style="display:flex;flex-direction:column;gap:14px;padding:32px 30px;background:#fff;border-radius:24px;text-decoration:none;color:#121512;min-height:240px;box-shadow:0 20px 50px -34px rgba(30,60,40,0.3);">
-          <span data-i18n="res3Tag" style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#5A9E6F;">Données</span>
-          <span data-i18n="res3" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;">ENCORE : la base de données derrière le scoring sectoriel du risque nature</span>
+          <span data-i18n="res2" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:21px;line-height:1.3;">TNFD et LEAP : le cadre de référence du risque nature</span>
           <span style="margin-top:auto;font-weight:600;font-size:14.5px;color:#41805A;"><span data-i18n="readMore">Lire la suite</span> <span class="arr">→</span></span>
         </a>
       </div>
@@ -505,10 +456,10 @@ a:hover{color:#41805A;}
     <div data-reveal="" style="max-width:1240px;margin:0 auto;border-radius:36px;background:#121512;color:#fff;padding:clamp(40px,6vw,80px) clamp(28px,5vw,72px);position:relative;overflow:hidden;">
       <div style="position:absolute;top:-200px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(61,220,132,0.28),rgba(61,220,132,0) 65%);pointer-events:none;animation:floaty2 8s ease-in-out infinite;"></div>
       <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px;align-items:center;">
-        <h2 data-i18n="demoTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(38px,5vw,68px);line-height:1.02;letter-spacing:-0.035em;margin:0;">Ce que vos analystes verront demain.</h2>
+        <h2 data-i18n="demoTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(38px,5vw,68px);line-height:1.02;letter-spacing:-0.035em;margin:0;">Voyez l'analyse d'un site de votre choix.</h2>
         <div>
-          <p data-i18n="demoSub" style="font-size:18px;line-height:1.6;color:#D7DCD8;margin:0 0 28px;max-width:460px;">Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.</p>
-          <a href="#calendly-wrap" class="pill" style="display:inline-flex;align-items:center;gap:12px;background:#5A9E6F;color:#fff;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;padding:19px 32px;border-radius:100px;box-shadow:0 16px 34px -12px rgba(61,220,132,0.5);"><span data-i18n="demoCta">Réserver une démo</span><span>→</span></a>
+          <p data-i18n="demoSub" style="font-size:18px;line-height:1.6;color:#D7DCD8;margin:0 0 28px;max-width:460px;">En 20 minutes, nous parcourons avec vous le rapport d'un site que vous choisissez.</p>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;"><a href="#calendly-wrap" class="pill" style="display:inline-flex;align-items:center;gap:12px;background:#5A9E6F;color:#fff;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;padding:19px 32px;border-radius:100px;box-shadow:0 16px 34px -12px rgba(61,220,132,0.5);"><span data-i18n="demoCta">Réserver une démo</span><span>→</span></a><a href="mailto:balthazar.courtois@greenance.fr?subject=Analyse%20d%27un%20site" data-i18n="demoMail" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15.5px;color:#fff;text-decoration:underline;text-underline-offset:4px;">Recevoir l'analyse par e-mail</a></div>
         </div>
       </div>
       <div id="calendly-wrap" style="position:relative;margin-top:48px;">
@@ -516,7 +467,7 @@ a:hover{color:#41805A;}
           <div data-i18n="calTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#fff;margin-bottom:8px;">Calendrier de réservation</div>
           <p data-i18n="calBody" style="font-size:14.5px;line-height:1.6;margin:0 auto 18px;max-width:460px;">Le calendrier est fourni par Calendly, qui dépose ses propres cookies. Il ne s'affiche qu'avec votre accord.</p>
           <button type="button" data-consent-calendly data-i18n="calBtn" style="appearance:none;border:0;cursor:pointer;background:#5A9E6F;color:#fff;font:inherit;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:15px;padding:13px 26px;border-radius:100px;">Afficher le calendrier</button>
-          <div style="margin-top:14px;font-size:13.5px;"><a href="https://calendly.com/balthazar-courtois-greenance/30min" target="_blank" rel="noopener" data-i18n="calLink" style="color:#D7DCD8;text-decoration:underline;">Ou réserver directement sur calendly.com</a></div>
+          <div style="margin-top:18px;font-size:15.5px;"><a href="https://calendly.com/balthazar-courtois-greenance/30min" target="_blank" rel="noopener" data-i18n="calLink" style="color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:4px;">Ou réserver directement sur calendly.com</a></div>
         </div>
         <div id="calendly-slot" style="display:none;min-width:320px;height:680px;background:#fff;border-radius:20px;overflow:hidden;"></div>
       </div>
@@ -564,109 +515,109 @@ class Component extends DCLogic {
   T = {
     fr: {
       navSolution:"La Solution", 
-      adaptTitle:"Mais pas que.", adaptSub:"L'IA de Greenance s'adapte à votre métier, et son interprétation avec.", jobAm:"Asset managers", jobPe:"Fonds de private equity", jobInfra:"Fonds d'infrastructure", jobEsg:"Conseil ESG", 
+      
       
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources",
-      demoCta:"Réserver une démo", calLink:"Ou réserver directement sur calendly.com", calBtn:"Afficher le calendrier", calBody:"Le calendrier est fourni par Calendly, qui dépose ses propres cookies. Il ne s'affiche qu'avec votre accord.", calTitle:"Calendrier de réservation",
+      demoCta:"Réserver une démo", calLink:"Ou réserver directement sur calendly.com", calBtn:"Afficher le calendrier", calBody:"Le calendrier est fourni par Calendly, qui dépose ses propres cookies. Il ne s'affiche qu'avec votre accord.", calTitle:"Calendrier de réservation", demoMail:"Recevoir l'analyse par e-mail", readStudy:"Lire l'étude", resStudy:"Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit", resStudyTag:"Étude", fieldLink:"Lire l'article de Process Alimentaire →", fi3b:"D'où vient l'eau du site ? Existe-t-il une alternative ? Quel plan en cas de restriction ?", fi3t:"Des questions qui pouvaient être posées avant.", fi2b:"Une production à l'arrêt pèse immédiatement sur le chiffre d'affaires, et donc sur la capacité de remboursement.", fi2t:"Une perte d'exploitation directe.", fi1b:"Le secteur indique une dépendance à l'eau ; seule l'analyse du site montre que la ressource locale est sous tension. C'est le croisement des deux qui révèle le risque.", fi1t:"Un risque invisible depuis le siège.", fieldSub:"Ce que cela implique pour une banque", fieldBody:"Fin juin 2026, en pleine canicule, l'alimentation en eau de sept usines du bassin de Pontivy a été coupée pour préserver l'eau potable des habitants et de l'hôpital. Environ 1 500 salariés ont été placés en chômage technique.", fieldTitle:"Pontivy, juin 2026 : le risque nature n'est plus théorique", ebField:"Sur le terrain", use4B:"une méthode traçable pour le superviseur et le reporting TNFD.", use4L:"Contrôle et reporting :", use3B:"les questions clés à poser et les plans d'accompagnement à construire ensemble.", use3L:"Dialogue avec l'emprunteur :", use2B:"le même référentiel d'une année sur l'autre.", use2L:"Revue annuelle :", use1B:"un signal nature dans chaque dossier, PME comprises.", use1L:"Instruction de crédit :", figPct:" %", fig4Label:"professionnels bancaires consultés pour la méthode", fig3Label:"des scores reliés à leur source et à leur méthode", fig2Label:"rapport par site et par entreprise, prêt pour le comité de crédit", fig1Label:"sources de données publiques croisées pour chaque site", chgStudy:"Lire l'étude →", chg3Body:"Retrouver les sites, rassembler les données, les interpréter : sans outil, un analyste y passe plusieurs jours par dossier. Le manque de données fiables à l'échelle du site est le premier frein cité dans notre Baromètre 2026.", chg3Title:"Et cela prend des jours.", chg2Body:"Une même entreprise peut avoir une usine en zone de sécheresse et une autre sans aucune tension. Connaître son secteur ne suffit pas, il faut regarder chaque site.", chg2Title:"Il se joue sur le site.", chg1Body:"La BCE et l'EBA attendent désormais que les banques évaluent le risque nature dans leurs décisions de crédit, avec une méthode qu'elles peuvent expliquer.", chg1Title:"Le superviseur le demande.", chgTitle:"Le risque nature entre dans l'analyse crédit.", ebChange:"Ce qui a changé", audMore:"Également disponible pour les gérants d'actifs et les fonds d'investissement →", aud3:"Équipes ESG et conformité", aud2:"Directions des risques", audTitle:"Pour les équipes crédit et risques des banques", panelSignal:"À surveiller", heroCta2:"Recevoir l'analyse d'un site",
       heroHeadline:"Le risque nature se joue au site, <span style=\"color:#5A9E6F;\">pas au siège.</span>",
-      heroSub:"Greenance analyse <strong style=\"color:#41805A;\">en quelques minutes</strong> les dépendances aux ressources naturelles des actifs d'une entreprise et les traduit en scores exploitables directement en comité de crédit.",
-      panelSite:"Aciérie · Fos-sur-Mer, FR", panelScoreLabel:"Score de vulnérabilité nature", panelRisk:"Vulnérabilité modérée",
+      heroSub:"Greenance mesure la dépendance de chaque site de vos emprunteurs à l'eau, au sol, à la biodiversité et aux aléas physiques, et vous livre un signal de crédit sourcé, prêt pour le comité.",
+      panelSite:"Exemple illustratif · Site sidérurgique, sud de la France", panelScoreLabel:"Score de vulnérabilité nature", 
       panelWater:"Eau", panelSoil:"Sol", panelBio:"Biodiversité",
-      audLabel:"Avec qui nous travaillons",
-      aud1:"Banques commerciales", aud1Body:"Un signal nature standardisé, traçable et défendable en comité de crédit.",
-      aud2Body:"Une due diligence nature qui couvre un portefeuille entier.",
-      aud3Body:"Une lecture actif par actif des dépendances aux ressources locales.",
-      aud4Body:"Des scores et seuils paramétrés selon votre mandat.",
-      otherTag1:"Gérants d'actifs", otherTag2:"Fonds d'infrastructure", otherTag3:"Assureurs crédit",
-      ebProblem:"Le problème", problemTitle:"Les banques naviguent à l'aveugle sur le risque nature.",
-      ebCost:"Le coût", ebUrgency:"L'urgence",
-      p1Body:"Les outils existants opèrent au niveau de l'émetteur ou du groupe. Mais le risque se matérialise sur le site, pas au siège social.",
-      p2Title:"Des processus manuels qui prennent des jours", p2Body:"Sans outil adapté, un analyste crédit reconstitue manuellement l'exposition environnementale d'un site, source par source, sans garantie de cohérence.",
-      p3Title:"Une pression réglementaire croissante", p3Body:"La BCE attend des établissements qu'ils comblent leurs lacunes en données nature avant 2027. Les sanctions prudentielles sont réelles et documentées.",
-      ebFigures:"Chiffres clés", heroStat1:"actifs analysés en quelques minutes", f1Label:"pour compléter votre évaluation du risque nature", f3Label:"entretiens de validation avec des professionnels de banques européennes", heroStat3:"aligné sur la TNFD et les attentes des régulateurs",
-      s4Body:"Structure élaborée autour du cadre TNFD/LEAP, compatible avec les attentes des régulateurs.",
-      ebSolution:"La solution", solTitle:"Greenance analyse des centaines d'actifs en quelques minutes.",
-      solSub:"L'IA de Greenance géolocalise automatiquement chaque site, croise sa position GPS avec les bases de données environnementales mondiales et génère un score de vulnérabilité nature structuré, mais aussi une analyse qualitative lisible par n'importe quel analyste, sans formation préalable.",
+      audLabel:"Pour qui",
+      aud1:"Analystes crédit", aud1Body:"Un rapport par site, à verser directement au dossier.",
+      aud2Body:"Une méthode documentée, que vous pouvez présenter au superviseur.",
+      aud3Body:"Une lecture du portefeuille structurée selon l'approche TNFD/LEAP.",
+      
+      
+      
+      
+      
+      
+      
+      ebFigures:"Chiffres clés", 
+      
+      ebSolution:"La solution", solTitle:"Vos analystes ne cherchent plus la donnée. Ils décident.",
+      solSub:"Greenance retrouve les sites d'une entreprise à partir de son nom, ou de votre propre liste, et croise chacun avec son environnement local. Le score est calculé par une méthode déterministe et documentée. L'IA sert à localiser les sites et à rédiger l'analyse ; elle ne calcule jamais le score.",
       discover:"Découvrir la méthodologie",
-      ebEssential:"L'essentiel", essTitle:"Greenance<br>en bref",
-      s1Title:"Géolocalisation IA", s1Body:"Identification automatique de chaque site à partir du nom de l'entreprise. Aucune saisie manuelle requise.",
-      s2Title:"Score de vulnérabilité nature", s2Body:"Croisement de l'exposition physique locale avec les dépendances sectorielles aux services écosystémiques : eau, sol, biodiversité.",
-      s3Title:"Outputs prêts pour la décision", s3Body:"Flags GO/NO-GO, interprétation qualitative, recommandations de covenants, exports PDF structurés pour comités de crédit.",
+      
+      
+      
+      
       ebHow:"Le processus", howTitle:"Comment ça marche", step1:"Étape 1", step2:"Étape 2", step3:"Étape 3",
-      h1Title:"Import", h1Body:"Chargez votre liste d'actifs ou entrez un nom d'entreprise. Greenance identifie automatiquement les actifs et les géolocalise.",
-      h2Title:"Analyse", h2Body:"Notre moteur IA croise chaque site avec les bases de données environnementales mondiales en temps réel : stress hydrique, sécheresse, inondations, qualité des sols, érosion, zones protégées, biodiversité, dépendances sectorielles.",
-      h3Title:"Output", h3Body:"Vous recevez un score structuré, une analyse IA, un rapport PDF, et des flags directement intégrables dans votre processus de crédit ou votre comité de risque.",
-      ebWho:"Cas d'usage", w1Title:"Banques commerciales · crédit et risque",
-      w1Body:"Greenance s'intègre directement dans le processus de financement : de l'instruction du dossier à la décision, vos équipes disposent d'un signal nature standardisé, traçable et défendable en comité, sans charge de travail supplémentaire.",
-      wPt1:"Décision d'octroi défendable", wPt2:"Intégré au processus de crédit", wPt3:"Aligné sur la TNFD et les attentes des régulateurs",
-      otherBody:"L'analyse IA de Greenance s'adapte à votre mandat : gérants d'actifs, fonds d'infrastructure, assureurs crédit ou banques de développement. Les scores, seuils et exports se paramètrent selon vos besoins, sans reconstruire la méthodologie.",
-      ebPress:"Témoignages", pressTitle:"Greenance<br>au quotidien.",
-      uc1Tag:"Conseil & ESG", uc1Quote:"Avant Greenance, je passais des heures à rechercher manuellement des données par site pour construire mes diagnostics. Maintenant j'arrive chez le client avec une cartographie de ses expositions et des recommandations de mitigation prêtes. Ça change complètement la valeur de mes livrables.", uc1Role:"Responsable mission, cabinet de conseil en risques environnementaux",
-      uc2Tag:"Banque commerciale", uc2Quote:"On analysait une dizaine d'entreprises par semaine avec des sources disparates et sans standardisation. Aujourd'hui, on sait avant chaque dialogue ESG quels actifs sont les plus vulnérables et quels sujets aborder. On ne passe plus à côté de ce qui compte vraiment.", uc2Role:"Analyste risques extra-financiers, banque commerciale",
-      uc3Tag:"Gestion d'actifs", uc3Quote:"La due diligence nature est devenue scalable. La géolocalisation automatique des actifs prend quelques minutes, on peut couvrir un portefeuille entier avec une profondeur qu'on ne pouvait pas atteindre manuellement avant.", uc3Role:"Responsable ESG, société de gestion",
+      h1Title:"Localiser.", h1Body:"Entrez un nom d'entreprise ou importez votre liste. Greenance identifie et géolocalise ses sites physiques : usines, entrepôts, bureaux, exploitations.",
+      h2Title:"Évaluer.", h2Body:"Pour chaque site, Greenance analyse l'eau, le sol, la biodiversité et les aléas physiques alentour, au regard de ce dont son activité dépend.",
+      h3Title:"Décider.", h3Body:"Vous recevez un rapport par site et par entreprise : le niveau de risque et le pilier qui le porte, une analyse rédigée, les questions clés à aborder avec l'emprunteur et des pistes de plans d'accompagnement.",
+      ebWho:"Cas d'usage", w1Title:"Là où vos décisions se prennent",
+      
+      
+      
+      
+      
+      
+      
       resTitle:"Nos perspectives", resAll:"Tous les articles", readMore:"Lire la suite",
-      res1Tag:"Réglementation", res1:"Réglementation BCE 2026 : risque nature et supervision bancaire",
-      res2Tag:"Cadres", res2:"TNFD et LEAP : le cadre de référence du risque nature",
-      res3Tag:"Données", res3:"ENCORE : la base de données derrière le scoring sectoriel du risque nature",
+      res1Tag:"Réglementation", res1:"Réglementation BCE 2026 : risque nature et supervision bancaire",
+      res2Tag:"Cadres", res2:"TNFD et LEAP : le cadre de référence du risque nature",
+      
       ebAbout:"Notre vision", aboutTitle:"Faire du risque nature une donnée financière, pas une bonne intention.",
-      aboutPara:"Greenance est né d'un constat simple : la nature est devenue un risque financier matériel, mais la finance n'a aucun moyen de le mesurer là où il se matérialise, au niveau des actifs. Quand la réglementation de la BCE a rendu ce sujet incontournable, nous avons décidé de construire l'infrastructure qui manquait.",
-      aboutPara2:"Notre conviction : le risque nature ne doit pas rester un sujet d'experts. Il doit devenir aussi lisible et défendable qu'un ratio financier, pour chaque analyste, dans chaque comité de crédit.",
-      aboutPara3:"Demain, aucune décision financière ne se prendra sans la nature dans l'équation. Notre ambition : devenir la référence européenne du risque nature, la plus fine, la plus précise, au service d'une finance réconciliée avec le vivant.",
-      demoTitle:"Ce que vos analystes verront demain.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
+      aboutPara:"Greenance est né d'un constat simple : la nature est devenue un risque financier matériel, mais la finance n'a aucun moyen de le mesurer là où il se matérialise, au niveau des actifs. Quand la réglementation de la BCE a rendu ce sujet incontournable, nous avons décidé de construire l'infrastructure qui manquait.",
+      aboutPara2:"Notre conviction : le risque nature ne doit pas rester un sujet d'experts. Il doit devenir aussi lisible et défendable qu'un ratio financier, pour chaque analyste, dans chaque comité de crédit.",
+      aboutPara3:"Demain, aucune décision financière ne se prendra sans la nature dans l'équation. Notre ambition : devenir la référence européenne du risque nature, la plus fine, la plus précise, au service d'une finance réconciliée avec le vivant.",
+      demoTitle:"Voyez l'analyse d'un site de votre choix.", demoSub:"En 20 minutes, nous parcourons avec vous le rapport d'un site que vous choisissez.",
       footTagline:"Le risque nature au niveau du site.", footColPlatform:"Plateforme", footColCompany:"Entreprise", footPlatform:"Plateforme", footMethod:"Méthodologie", footGlossary:"Glossaire", footAbout:"À propos", footPrivacy:"Politique de confidentialité", footLegal:"Mentions légales", footCookies:"Gérer les cookies",
       footRights:"© 2026 Greenance SAS. Tous droits réservés."
     },
     en: {
       navSolution:"The Solution", 
-      adaptTitle:"And that's not all.", adaptSub:"Greenance's AI adapts to your business, and so does its interpretation.", jobAm:"Asset managers", jobPe:"Private equity funds", jobInfra:"Infrastructure funds", jobEsg:"ESG consulting", 
+      
       
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources",
-      demoCta:"Book a demo", calLink:"Or book directly on calendly.com", calBtn:"Show the calendar", calBody:"The calendar is provided by Calendly, which sets its own cookies. It only appears with your consent.", calTitle:"Booking calendar",
+      demoCta:"Book a demo", calLink:"Or book directly on calendly.com", calBtn:"Show the calendar", calBody:"The calendar is provided by Calendly, which sets its own cookies. It only appears with your consent.", calTitle:"Booking calendar", demoMail:"Get the analysis by email", readStudy:"Read the study", resStudy:"2026 Barometer: the place of nature-related risks in credit analysis", resStudyTag:"Study", fieldLink:"Read the Process Alimentaire article (in French) →", fi3b:"Where does the site's water come from? Is there an alternative? What is the plan in case of restrictions?", fi3t:"Questions that could have been asked beforehand.", fi2b:"Halted production weighs immediately on revenue, and therefore on the ability to repay.", fi2t:"A direct operating loss.", fi1b:"The sector points to a dependence on water; only the site analysis shows that the local resource is under stress. It is the combination of the two that reveals the risk.", fi1t:"A risk invisible from headquarters.", fieldSub:"What this means for a bank", fieldBody:"At the end of June 2026, in the middle of a heatwave, the water supply to seven plants in the Pontivy basin was cut off to preserve drinking water for residents and the hospital. Around 1,500 employees were placed on temporary layoff.", fieldTitle:"Pontivy, June 2026: nature risk is no longer theoretical", ebField:"In the field", use4B:"a traceable method for the supervisor and for TNFD reporting.", use4L:"Control and reporting:", use3B:"the key questions to ask and the support plans to build together.", use3L:"Borrower dialogue:", use2B:"the same frame of reference from one year to the next.", use2L:"Annual review:", use1B:"a nature signal in every file, SMEs included.", use1L:"Credit origination:", figPct:"%", fig4Label:"banking professionals consulted for the method", fig3Label:"of scores linked to their source and their method", fig2Label:"report per site and per company, ready for credit committee", fig1Label:"public data sources cross-referenced for each site", chgStudy:"Read the study →", chg3Body:"Finding the sites, gathering the data, interpreting it: without a tool, an analyst spends several days per file on it. The lack of reliable site-level data is the main obstacle cited in our 2026 Barometer.", chg3Title:"And it takes days.", chg2Body:"The same company can have one plant in a drought zone and another under no stress at all. Knowing its sector is not enough, you have to look at each site.", chg2Title:"It plays out at the site.", chg1Body:"The ECB and the EBA now expect banks to assess nature risk in their credit decisions, with a method they can explain.", chg1Title:"Supervisors are asking for it.", chgTitle:"Nature risk is entering credit analysis.", ebChange:"What has changed", audMore:"Also available for asset managers and investment funds →", aud3:"ESG and compliance teams", aud2:"Risk management", audTitle:"For banks' credit and risk teams", panelSignal:"To monitor", heroCta2:"Get the analysis of a site",
       heroHeadline:"Nature risk happens at the site, <span style=\"color:#5A9E6F;\">not at headquarters.</span>",
-      heroSub:"Greenance analyses <strong style=\"color:#41805A;\">in minutes</strong> how a company's assets depend on natural resources and turns them into scores you can use directly in credit committee.",
-      panelSite:"Steelworks · Fos-sur-Mer, FR", panelScoreLabel:"Nature vulnerability score", panelRisk:"Moderate vulnerability",
+      heroSub:"Greenance measures how each of your borrowers' sites depends on water, soil, biodiversity and physical hazards, and gives you a sourced credit signal, ready for committee.",
+      panelSite:"Illustrative example · Steelmaking site, southern France", panelScoreLabel:"Nature vulnerability score", 
       panelWater:"Water", panelSoil:"Soil", panelBio:"Biodiversity",
-      audLabel:"Who we work with",
-      aud1:"Commercial banks", aud1Body:"A standardised, traceable nature signal you can defend in credit committee.",
-      aud2Body:"Nature due diligence that covers an entire portfolio.",
-      aud3Body:"An asset-by-asset view of dependencies on local resources.",
-      aud4Body:"Scores and thresholds tailored to your mandate.",
-      otherTag1:"Asset managers", otherTag2:"Infrastructure funds", otherTag3:"Credit insurers",
-      ebProblem:"The problem", problemTitle:"Banks are flying blind on nature risk.",
-      ebCost:"The cost", ebUrgency:"The urgency",
-      p1Body:"Existing tools operate at the issuer or group level. But risk materialises at the site, not at headquarters.",
-      p2Title:"Manual processes that take days", p2Body:"Without a dedicated tool, a credit analyst manually rebuilds a site's environmental exposure, source by source, with no guarantee of consistency.",
-      p3Title:"Growing regulatory pressure", p3Body:"The ECB expects institutions to close their nature data gaps before 2027. Supervisory sanctions are real and documented.",
-      ebFigures:"Key figures", heroStat1:"assets analysed in minutes", f1Label:"to complete your nature risk assessment", f3Label:"validation interviews with European banking professionals", heroStat3:"aligned with TNFD and regulatory expectations",
-      s4Body:"Built around the TNFD/LEAP framework, compatible with regulatory expectations.",
-      ebSolution:"The solution", solTitle:"Greenance analyses hundreds of assets in minutes.",
-      solSub:"Greenance's AI automatically geolocates every site, cross-references its GPS position with global environmental databases and generates a structured nature vulnerability score, plus a qualitative analysis readable by any analyst, with no prior training.",
+      audLabel:"Who it's for",
+      aud1:"Credit analysts", aud1Body:"One report per site, ready to go straight into the credit file.",
+      aud2Body:"A documented method that you can present to your supervisor.",
+      aud3Body:"A view of the portfolio structured along the TNFD/LEAP approach.",
+      
+      
+      
+      
+      
+      
+      
+      ebFigures:"Key figures", 
+      
+      ebSolution:"The solution", solTitle:"Your analysts no longer search for data. They decide.",
+      solSub:"Greenance finds a company's sites from its name, or from your own list, and cross-references each one with its local environment. The score is calculated by a deterministic, documented method. AI is used to locate the sites and write the analysis; it never calculates the score.",
       discover:"Explore the methodology",
-      ebEssential:"The essentials", essTitle:"Greenance<br>in brief",
-      s1Title:"AI geolocation", s1Body:"Automatic identification of each site from the company name. No manual entry required.",
-      s2Title:"Nature vulnerability score", s2Body:"Cross-references local physical exposure with sector dependencies on ecosystem services: water, soil, biodiversity.",
-      s3Title:"Decision-ready outputs", s3Body:"GO/NO-GO flags, qualitative interpretation, covenant recommendations, structured PDF exports for credit committees.",
+      
+      
+      
+      
       ebHow:"The process", howTitle:"How it works", step1:"Step 1", step2:"Step 2", step3:"Step 3",
-      h1Title:"Import", h1Body:"Upload your asset list or enter a company name. Greenance automatically identifies the assets and geolocates them.",
-      h2Title:"Analysis", h2Body:"Our AI engine cross-references each site with global environmental databases in real time: water stress, drought, floods, soil quality, erosion, protected areas, biodiversity, sector dependencies.",
-      h3Title:"Output", h3Body:"You receive a structured score, an AI analysis, a PDF report, and flags ready to plug into your credit process or risk committee.",
-      ebWho:"Use cases", w1Title:"Commercial banks · credit and risk",
-      w1Body:"Greenance plugs straight into the lending process: from deal screening to the decision, your teams get a standardised, traceable and committee-defensible nature signal, with no extra workload.",
-      wPt1:"Defensible lending decision", wPt2:"Embedded in the credit process", wPt3:"Aligned with TNFD and regulatory expectations",
-      otherBody:"Greenance's AI analysis adapts to your mandate: asset managers, infrastructure funds, credit insurers or development banks. Scores, thresholds and exports are tailored to your needs, without rebuilding the methodology.",
-      ebPress:"Testimonials", pressTitle:"Greenance<br>day to day.",
-      uc1Tag:"Consulting & ESG", uc1Quote:"Before Greenance, I spent hours manually researching site-by-site data to build my diagnostics. Now I arrive at the client with a map of their exposures and ready-made mitigation recommendations. It completely changes the value of my deliverables.", uc1Role:"Engagement lead, environmental risk consultancy",
-      uc2Tag:"Commercial bank", uc2Quote:"We used to analyse about ten companies a week from scattered sources with no standardisation. Today, before every ESG dialogue we know which assets are most vulnerable and which topics to raise. We no longer miss what truly matters.", uc2Role:"Non-financial risk analyst, commercial bank",
-      uc3Tag:"Asset management", uc3Quote:"Nature due diligence has become scalable. Automatic asset geolocation takes a few minutes, and we can cover a whole portfolio with a depth we couldn't reach manually before.", uc3Role:"Head of ESG, asset manager",
+      h1Title:"Locate.", h1Body:"Enter a company name or import your list. Greenance identifies and geolocates its physical sites: plants, warehouses, offices, farms.",
+      h2Title:"Assess.", h2Body:"For each site, Greenance analyses the water, soil, biodiversity and physical hazards around it, in light of what its activity depends on.",
+      h3Title:"Decide.", h3Body:"You receive a report per site and per company: the risk level and the pillar driving it, a written analysis, the key questions to raise with the borrower and options for support plans.",
+      ebWho:"Use cases", w1Title:"Where your decisions are made",
+      
+      
+      
+      
+      
+      
+      
       resTitle:"Our insights", resAll:"All articles", readMore:"Read more",
       res1Tag:"Regulation", res1:"ECB 2026 regulation: nature risk and banking supervision",
       res2Tag:"Frameworks", res2:"TNFD and LEAP: the reference framework for nature risk",
-      res3Tag:"Data", res3:"ENCORE: the database behind sector-level nature risk scoring",
+      
       ebAbout:"Our vision", aboutTitle:"Turn nature risk into financial data, not a good intention.",
       aboutPara:"Greenance was born from a simple observation: nature has become a material financial risk, yet finance has no way to measure it where it actually materialises, at the asset level. When ECB regulation made the topic unavoidable, we set out to build the missing infrastructure.",
       aboutPara2:"Our conviction: nature risk should not stay an experts-only topic. It must become as readable and defensible as a financial ratio, for every analyst, in every credit committee.",
       aboutPara3:"Tomorrow, no financial decision will be made without nature in the equation. Our ambition: to become Europe's reference for nature risk, the finest, the most precise, in the service of a finance reconciled with the living world.",
-      demoTitle:"What your analysts will see tomorrow.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
+      demoTitle:"See the analysis of a site of your choice.", demoSub:"In 20 minutes, we walk you through the report of a site you choose.",
       footTagline:"Nature risk at the site level.", footColPlatform:"Platform", footColCompany:"Company", footPlatform:"Platform", footMethod:"Methodology", footGlossary:"Glossary", footAbout:"About", footPrivacy:"Privacy policy", footLegal:"Legal notice", footCookies:"Manage cookies",
       footRights:"© 2026 Greenance SAS. All rights reserved."
     }
@@ -775,12 +726,13 @@ class Component extends DCLogic {
     const reveals = Array.from(document.querySelectorAll('[data-reveal]'));
     if (intensity > 0) reveals.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.dataset.armed = '1'; });
     const counters = Array.from(document.querySelectorAll('[data-counter]'));
-    counters.forEach(el => { el.textContent = '0'; });
     const bars = Array.from(document.querySelectorAll('[data-bar]'));
     const gauges = Array.from(document.querySelectorAll('[data-gauge]'));
     const done = new WeakSet();
     const vh = () => window.innerHeight || document.documentElement.clientHeight;
     const inView = (el) => { const r = el.getBoundingClientRect(); return r.top < vh() - 40 && r.bottom > 0; };
+    /* The HTML keeps each counter's final value (crawlers, no JS); only counters not yet on screen restart from 0 for the count-up. */
+    if (intensity > 0) counters.forEach(el => { if (!inView(el)) el.textContent = '0'; });
 
     const frame = () => {
       const h = vh();

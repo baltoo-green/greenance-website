@@ -58,15 +58,15 @@
       "name": "Qu'est-ce que Greenance ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Greenance est une plateforme qui évalue le risque nature au niveau du site industriel, et non du siège social. À partir du nom d'une entreprise, elle identifie ses actifs, les géolocalise, et produit un score de vulnérabilité nature sur trois piliers : eau, sols, biodiversité."
+        "text": "Greenance est une plateforme qui évalue le risque nature au niveau du site, et non du siège social. À partir du nom d'une entreprise, elle identifie ses sites, les géolocalise, et évalue pour chacun l'eau, le sol, la biodiversité et les aléas physiques."
       }
     },
     {
       "@type": "Question",
-      "name": "Comment fonctionne la géolocalisation des actifs ?",
+      "name": "Comment fonctionne la géolocalisation des sites ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il suffit du nom de l'entreprise. Greenance identifie automatiquement ses sites à partir de registres publics, de déclarations financières et de sources d'entreprise, sans saisie manuelle de coordonnées ou d'adresses."
+        "text": "Il suffit du nom de l'entreprise. Greenance identifie automatiquement ses sites à partir de registres publics, de déclarations financières et de sources d'entreprise, sans saisie manuelle de coordonnées ou d'adresses. Vous pouvez aussi importer votre propre liste de sites."
       }
     },
     {
@@ -74,7 +74,15 @@
       "name": "Comment le score est-il calculé ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Chaque score croise trois éléments : la dépendance du secteur d'activité à une ressource naturelle, l'état réel de cette ressource à l'endroit précis du site, et le niveau d'adaptation déjà en place. Le détail complet de la méthode est expliqué sur notre page Méthodologie."
+        "text": "Chaque score croise trois éléments : la dépendance de l'activité à une ressource naturelle, l'état réel de cette ressource à l'endroit précis du site, et le niveau d'adaptation déjà en place. Les aléas physiques sont évalués à part, comme une exposition directe du site. Le détail complet est expliqué sur notre page Méthodologie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "L'IA calcule-t-elle le score ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non. L'IA localise les sites et rédige l'analyse. Le score est calculé par une méthode déterministe, documentée et reproductible."
       }
     },
     {
@@ -82,7 +90,15 @@
       "name": "Quelles données utilisez-vous ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Des dizaines de sources de données environnementales publiques, déjà utilisées aujourd'hui par les analystes du secteur. Notre différence n'est pas la donnée elle-même, mais la vitesse et la cohérence avec lesquelles nous l'appliquons, sur des centaines de sites à la fois."
+        "text": "30 sources de données environnementales publiques, déjà utilisées aujourd'hui par les analystes du secteur. Notre différence n'est pas la donnée elle-même, mais la vitesse et la cohérence avec lesquelles nous l'appliquons, sur l'ensemble d'un portefeuille."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que se passe-t-il quand une donnée manque ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aucune valeur n'est inventée pour la remplacer. La donnée manquante est signalée et l'indice de confiance du rapport baisse en conséquence."
       }
     },
     {
@@ -90,15 +106,15 @@
       "name": "Est-ce aligné avec les cadres réglementaires (TNFD, BCE, EBA) ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Oui. La méthodologie s'appuie sur les cadres TNFD/LEAP et ENCORE, et répond aux attentes de supervision de la BCE et du mécanisme de surveillance unique sur le risque physique, ainsi qu'à l'EBA/GL/2025/01."
+        "text": "La méthodologie s'appuie sur la TNFD/LEAP et a été conçue au regard des attentes de la BCE et de l'EBA/GL/2025/01. Ces textes ne prescrivent pas de méthode de calcul : Greenance vous donne une méthode documentée, que vous pouvez présenter au superviseur."
       }
     },
     {
       "@type": "Question",
-      "name": "En quoi Greenance diffère-t-il des outils d'exposition climatique classiques ?",
+      "name": "En quoi Greenance diffère-t-il des outils d'exposition climatique ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Les outils d'exposition climatique mesurent l'impact de phénomènes physiques sur un actif : inondation, canicule. Greenance mesure autre chose : la dépendance opérationnelle de cet actif aux ressources naturelles pour fonctionner. Ce sont deux directions causales différentes, complémentaires plutôt que concurrentes."
+        "text": "Les outils climat mesurent l'exposition d'un actif aux aléas. Greenance évalue aussi les aléas physiques, et ajoute ce que ces outils ne voient pas : la dépendance du site aux ressources dont son activité a besoin pour fonctionner."
       }
     },
     {
@@ -114,7 +130,15 @@
       "name": "Combien de temps prend une analyse ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Quelques minutes, y compris pour un portefeuille de plus de 150 actifs."
+        "text": "L'analyse d'un site est instantanée. Un portefeuille entier peut être traité en un seul lot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Où sont hébergées les données ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les données de la plateforme et de vos analyses sont hébergées en France."
       }
     },
     {
@@ -122,7 +146,7 @@
       "name": "À qui s'adresse Greenance ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "En priorité aux banques commerciales : analystes crédit, équipes ESG, directions des risques. La plateforme s'adresse aussi aux gérants d'actifs, assureurs, gérants de SCPI/OPCI et banques de développement."
+        "text": "En priorité aux banques : analystes crédit, équipes ESG et conformité, directions des risques. Aussi aux gérants d'actifs, aux fonds d'investissement et aux gérants de SCPI/OPCI."
       }
     },
     {
@@ -130,7 +154,7 @@
       "name": "Quel est le tarif ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Le tarif dépend du périmètre : nombre d'actifs, profondeur d'analyse, fréquence. Le plus simple est d'en discuter directement lors d'une démo."
+        "text": "Le tarif dépend de votre établissement et du périmètre couvert. Nous vous le présentons lors de la démo."
       }
     }
   ]
@@ -164,14 +188,14 @@
 <style>
 *{box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-serif;color:#1A1A1A;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 [data-reveal]{opacity:1;transform:none;}
 .navlink{color:#1A1A1A;text-decoration:none;font-size:15px;font-weight:500;transition:color .15s ease;}
 .navlink:hover{color:#5A9E6F;}
 .cta-primary{transition:background .2s ease,color .2s ease,transform .2s ease,box-shadow .2s ease;}
-.cta-primary:hover{background:#3DDC84 !important;color:#0c2014 !important;transform:translateY(-2px);box-shadow:0 12px 30px rgba(61,220,132,0.32);}
+.cta-primary:hover{background:#3DDC84 !important;color:#0c2014 !important;transform:translateY(-2px);box-shadow:0 12px 30px rgba(61,220,132,0.32);}
 .linkrow a{transition:color .15s ease;}
-.linkrow a:hover{color:#5A9E6F !important;}
+.linkrow a:hover{color:#5A9E6F !important;}
 .mobile-panel{display:none;}
 .mobile-panel.open{display:flex;}
 .nav-burger{display:none;}
@@ -182,12 +206,12 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
 .qbtn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:none;border:none;text-align:left;cursor:pointer;padding:22px 24px;font-family:'Inter',sans-serif;}
 .qchevron{flex:none;width:20px;height:20px;transition:transform .25s ease;color:#5A9E6F;}
 .qanswer{max-height:0;overflow:hidden;transition:max-height .32s ease;}
-@media(max-width:900px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
+@media(max-width:900px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
 .pill{white-space:nowrap;transition:transform .25s ease,box-shadow .25s ease,background .25s ease;}
-.pill:hover{transform:translateY(-2px);background:#4A8C5E !important;box-shadow:0 18px 36px -10px rgba(90,158,111,0.6) !important;color:#fff !important;}
+.pill:hover{transform:translateY(-2px);background:#4A8C5E !important;box-shadow:0 18px 36px -10px rgba(90,158,111,0.6) !important;color:#fff !important;}
 .navlink{white-space:nowrap;}
-.bar{background:#121512 !important;}
-@media(max-width:1120px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
+.bar{background:#121512 !important;}
+@media(max-width:1120px){.nav-desktop{display:none !important;}.nav-burger{display:flex !important;}}
 </style>
 </helmet>
 
@@ -243,16 +267,19 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
   <!-- ACCORDION -->
   <section style="padding:clamp(24px,4vw,40px) 24px clamp(72px,8vw,104px);">
     <div id="accordion" style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;">
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Qu'est-ce que Greenance ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Greenance est une plateforme qui évalue le risque nature au niveau du site industriel, et non du siège social. À partir du nom d'une entreprise, elle identifie ses actifs, les géolocalise, et produit un score de vulnérabilité nature sur trois piliers : eau, sols, biodiversité.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Comment fonctionne la géolocalisation des actifs ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Il suffit du nom de l'entreprise. Greenance identifie automatiquement ses sites à partir de registres publics, de déclarations financières et de sources d'entreprise, sans saisie manuelle de coordonnées ou d'adresses.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Comment le score est-il calculé ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Chaque score croise trois éléments : la dépendance du secteur d'activité à une ressource naturelle, l'état réel de cette ressource à l'endroit précis du site, et le niveau d'adaptation déjà en place. Le détail complet de la méthode est expliqué sur notre page Méthodologie.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Quelles données utilisez-vous ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Des dizaines de sources de données environnementales publiques, déjà utilisées aujourd'hui par les analystes du secteur. Notre différence n'est pas la donnée elle-même, mais la vitesse et la cohérence avec lesquelles nous l'appliquons, sur des centaines de sites à la fois.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Est-ce aligné avec les cadres réglementaires (TNFD, BCE, EBA) ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Oui. La méthodologie s'appuie sur les cadres TNFD/LEAP et ENCORE, et répond aux attentes de supervision de la BCE et du mécanisme de surveillance unique sur le risque physique, ainsi qu'à l'EBA/GL/2025/01.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">En quoi Greenance diffère-t-il des outils d'exposition climatique classiques ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Les outils d'exposition climatique mesurent l'impact de phénomènes physiques sur un actif : inondation, canicule. Greenance mesure autre chose : la dépendance opérationnelle de cet actif aux ressources naturelles pour fonctionner. Ce sont deux directions causales différentes, complémentaires plutôt que concurrentes.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Greenance fournit-il une notation de crédit ou une probabilité de défaut ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Non. Greenance produit un signal qualitatif et un score de vulnérabilité, pensés comme un élément d'appréciation en amont de la décision de crédit, pas comme une notation ou une probabilité de défaut. La calibration crédit reste une surcouche qualitative, à la main de vos équipes risque.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Combien de temps prend une analyse ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Quelques minutes, y compris pour un portefeuille de plus de 150 actifs.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">À qui s'adresse Greenance ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">En priorité aux banques commerciales : analystes crédit, équipes ESG, directions des risques. La plateforme s'adresse aussi aux gérants d'actifs, assureurs, gérants de SCPI/OPCI et banques de développement.</div></div></div>
-<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Quel est le tarif ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Le tarif dépend du périmètre : nombre d'actifs, profondeur d'analyse, fréquence. Le plus simple est d'en discuter directement lors d'une démo.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Qu'est-ce que Greenance ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Greenance est une plateforme qui évalue le risque nature au niveau du site, et non du siège social. À partir du nom d'une entreprise, elle identifie ses sites, les géolocalise, et évalue pour chacun l'eau, le sol, la biodiversité et les aléas physiques.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Comment fonctionne la géolocalisation des sites ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Il suffit du nom de l'entreprise. Greenance identifie automatiquement ses sites à partir de registres publics, de déclarations financières et de sources d'entreprise, sans saisie manuelle de coordonnées ou d'adresses. Vous pouvez aussi importer votre propre liste de sites.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Comment le score est-il calculé ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Chaque score croise trois éléments : la dépendance de l'activité à une ressource naturelle, l'état réel de cette ressource à l'endroit précis du site, et le niveau d'adaptation déjà en place. Les aléas physiques sont évalués à part, comme une exposition directe du site. Le détail complet est expliqué sur notre page Méthodologie.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">L'IA calcule-t-elle le score ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Non. L'IA localise les sites et rédige l'analyse. Le score est calculé par une méthode déterministe, documentée et reproductible.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Quelles données utilisez-vous ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">30 sources de données environnementales publiques, déjà utilisées aujourd'hui par les analystes du secteur. Notre différence n'est pas la donnée elle-même, mais la vitesse et la cohérence avec lesquelles nous l'appliquons, sur l'ensemble d'un portefeuille.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Que se passe-t-il quand une donnée manque ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Aucune valeur n'est inventée pour la remplacer. La donnée manquante est signalée et l'indice de confiance du rapport baisse en conséquence.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Est-ce aligné avec les cadres réglementaires (TNFD, BCE, EBA) ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">La méthodologie s'appuie sur la TNFD/LEAP et a été conçue au regard des attentes de la BCE et de l'EBA/GL/2025/01. Ces textes ne prescrivent pas de méthode de calcul : Greenance vous donne une méthode documentée, que vous pouvez présenter au superviseur.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">En quoi Greenance diffère-t-il des outils d'exposition climatique ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Les outils climat mesurent l'exposition d'un actif aux aléas. Greenance évalue aussi les aléas physiques, et ajoute ce que ces outils ne voient pas : la dépendance du site aux ressources dont son activité a besoin pour fonctionner.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Greenance fournit-il une notation de crédit ou une probabilité de défaut ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Non. Greenance produit un signal qualitatif et un score de vulnérabilité, pensés comme un élément d'appréciation en amont de la décision de crédit, pas comme une notation ou une probabilité de défaut. La calibration crédit reste une surcouche qualitative, à la main de vos équipes risque.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Combien de temps prend une analyse ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">L'analyse d'un site est instantanée. Un portefeuille entier peut être traité en un seul lot.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Où sont hébergées les données ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Les données de la plateforme et de vos analyses sont hébergées en France.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">À qui s'adresse Greenance ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">En priorité aux banques : analystes crédit, équipes ESG et conformité, directions des risques. Aussi aux gérants d'actifs, aux fonds d'investissement et aux gérants de SCPI/OPCI.</div></div></div>
+<div class="qcard"><button class="qbtn"><span style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:17px;color:#1A1A1A;line-height:1.4;">Quel est le tarif ?</span><svg class="qchevron" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="qanswer"><div style="padding:0 24px 22px;font-size:15.5px;line-height:1.7;color:#6B7280;">Le tarif dépend de votre établissement et du périmètre couvert. Nous vous le présentons lors de la démo.</div></div></div>
 </div>
   </section>
 
@@ -261,9 +288,9 @@ body{margin:0;background:#F6F8F4 !important;font-family:'Inter',system-ui,sans-s
     <div data-reveal="" style="max-width:1240px;margin:0 auto;border-radius:36px;background:#121512;color:#fff;padding:clamp(40px,6vw,80px) clamp(28px,5vw,72px);position:relative;overflow:hidden;">
       <div style="position:absolute;top:-200px;right:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(61,220,132,0.28),rgba(61,220,132,0) 65%);pointer-events:none;"></div>
       <div style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:40px;align-items:center;">
-        <h2 data-i18n="demoTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.6vw,60px);line-height:1.04;letter-spacing:-0.035em;margin:0;">Ce que vos analystes verront demain.</h2>
+        <h2 data-i18n="demoTitle" style="font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.6vw,60px);line-height:1.04;letter-spacing:-0.035em;margin:0;">Voyez l'analyse d'un site de votre choix.</h2>
         <div>
-          <p data-i18n="demoSub" style="font-size:18px;line-height:1.6;color:#D7DCD8;margin:0 0 28px;max-width:460px;">Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.</p>
+          <p data-i18n="demoSub" style="font-size:18px;line-height:1.6;color:#D7DCD8;margin:0 0 28px;max-width:460px;">En 20 minutes, nous parcourons avec vous le rapport d'un site que vous choisissez.</p>
           <a href="#" data-calendly="" class="pill" style="display:inline-flex;align-items:center;gap:12px;background:#5A9E6F;color:#fff;text-decoration:none;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;font-weight:700;letter-spacing:0.02em;text-transform:uppercase;padding:19px 32px;border-radius:100px;box-shadow:0 16px 34px -12px rgba(61,220,132,0.5);"><span data-i18n="demoCta">Réserver une démo</span><span>→</span></a>
         </div>
       </div>
@@ -316,20 +343,23 @@ class Component extends DCLogic {
       footColPlatform:"Plateforme", footColCompany:"Entreprise", footAll:"Tous les articles", footGlossary:"Glossaire", 
       navPlatform:"Plateforme", navWhy:"Pourquoi Greenance", navAbout:"À propos", navMethod:"Méthodologie", navFaq:"FAQ", navResources:"Ressources", demoCta:"Réserver une démo", pageTitle:"FAQ Greenance — Vos questions fréquentes répondues",
       faqEyebrow:"FAQ", faqTitle:"Questions fréquentes",
-      demoTitle:"Ce que vos analystes verront demain.", demoSub:"Une démonstration de 20 minutes suffit pour voir comment nous pouvons vous simplifier la vie.",
+      demoTitle:"Voyez l'analyse d'un site de votre choix.", demoSub:"En 20 minutes, nous parcourons avec vous le rapport d'un site que vous choisissez.",
       footTagline:"Le risque nature au niveau du site.", footPlatform:"Plateforme", footMethod:"Méthodologie", footFaq:"FAQ", footResources:"Ressources", footAbout:"À propos", footPrivacy:"Politique de confidentialité", footLegal:"Mentions légales", footCookies:"Gérer les cookies",
       footRights:"© 2026 Greenance SAS. Tous droits réservés.",
       qa: [
-        ["Qu'est-ce que Greenance ?","Greenance est une plateforme qui évalue le risque nature au niveau du site industriel, et non du siège social. À partir du nom d'une entreprise, elle identifie ses actifs, les géolocalise, et produit un score de vulnérabilité nature sur trois piliers : eau, sols, biodiversité."],
-        ["Comment fonctionne la géolocalisation des actifs ?","Il suffit du nom de l'entreprise. Greenance identifie automatiquement ses sites à partir de registres publics, de déclarations financières et de sources d'entreprise, sans saisie manuelle de coordonnées ou d'adresses."],
-        ["Comment le score est-il calculé ?","Chaque score croise trois éléments : la dépendance du secteur d'activité à une ressource naturelle, l'état réel de cette ressource à l'endroit précis du site, et le niveau d'adaptation déjà en place. Le détail complet de la méthode est expliqué sur notre page Méthodologie."],
-        ["Quelles données utilisez-vous ?","Des dizaines de sources de données environnementales publiques, déjà utilisées aujourd'hui par les analystes du secteur. Notre différence n'est pas la donnée elle-même, mais la vitesse et la cohérence avec lesquelles nous l'appliquons, sur des centaines de sites à la fois."],
-        ["Est-ce aligné avec les cadres réglementaires (TNFD, BCE, EBA) ?","Oui. La méthodologie s'appuie sur les cadres TNFD/LEAP et ENCORE, et répond aux attentes de supervision de la BCE et du mécanisme de surveillance unique sur le risque physique, ainsi qu'à l'EBA/GL/2025/01."],
-        ["En quoi Greenance diffère-t-il des outils d'exposition climatique classiques ?","Les outils d'exposition climatique mesurent l'impact de phénomènes physiques sur un actif : inondation, canicule. Greenance mesure autre chose : la dépendance opérationnelle de cet actif aux ressources naturelles pour fonctionner. Ce sont deux directions causales différentes, complémentaires plutôt que concurrentes."],
-        ["Greenance fournit-il une notation de crédit ou une probabilité de défaut ?","Non. Greenance produit un signal qualitatif et un score de vulnérabilité, pensés comme un élément d'appréciation en amont de la décision de crédit, pas comme une notation ou une probabilité de défaut. La calibration crédit reste une surcouche qualitative, à la main de vos équipes risque."],
-        ["Combien de temps prend une analyse ?","Quelques minutes, y compris pour un portefeuille de plus de 150 actifs."],
-        ["À qui s'adresse Greenance ?","En priorité aux banques commerciales : analystes crédit, équipes ESG, directions des risques. La plateforme s'adresse aussi aux gérants d'actifs, assureurs, gérants de SCPI/OPCI et banques de développement."],
-        ["Quel est le tarif ?","Le tarif dépend du périmètre : nombre d'actifs, profondeur d'analyse, fréquence. Le plus simple est d'en discuter directement lors d'une démo."]
+        ["Qu'est-ce que Greenance ?", "Greenance est une plateforme qui évalue le risque nature au niveau du site, et non du siège social. À partir du nom d'une entreprise, elle identifie ses sites, les géolocalise, et évalue pour chacun l'eau, le sol, la biodiversité et les aléas physiques."],
+        ["Comment fonctionne la géolocalisation des sites ?", "Il suffit du nom de l'entreprise. Greenance identifie automatiquement ses sites à partir de registres publics, de déclarations financières et de sources d'entreprise, sans saisie manuelle de coordonnées ou d'adresses. Vous pouvez aussi importer votre propre liste de sites."],
+        ["Comment le score est-il calculé ?", "Chaque score croise trois éléments : la dépendance de l'activité à une ressource naturelle, l'état réel de cette ressource à l'endroit précis du site, et le niveau d'adaptation déjà en place. Les aléas physiques sont évalués à part, comme une exposition directe du site. Le détail complet est expliqué sur notre page Méthodologie."],
+        ["L'IA calcule-t-elle le score ?", "Non. L'IA localise les sites et rédige l'analyse. Le score est calculé par une méthode déterministe, documentée et reproductible."],
+        ["Quelles données utilisez-vous ?", "30 sources de données environnementales publiques, déjà utilisées aujourd'hui par les analystes du secteur. Notre différence n'est pas la donnée elle-même, mais la vitesse et la cohérence avec lesquelles nous l'appliquons, sur l'ensemble d'un portefeuille."],
+        ["Que se passe-t-il quand une donnée manque ?", "Aucune valeur n'est inventée pour la remplacer. La donnée manquante est signalée et l'indice de confiance du rapport baisse en conséquence."],
+        ["Est-ce aligné avec les cadres réglementaires (TNFD, BCE, EBA) ?", "La méthodologie s'appuie sur la TNFD/LEAP et a été conçue au regard des attentes de la BCE et de l'EBA/GL/2025/01. Ces textes ne prescrivent pas de méthode de calcul : Greenance vous donne une méthode documentée, que vous pouvez présenter au superviseur."],
+        ["En quoi Greenance diffère-t-il des outils d'exposition climatique ?", "Les outils climat mesurent l'exposition d'un actif aux aléas. Greenance évalue aussi les aléas physiques, et ajoute ce que ces outils ne voient pas : la dépendance du site aux ressources dont son activité a besoin pour fonctionner."],
+        ["Greenance fournit-il une notation de crédit ou une probabilité de défaut ?", "Non. Greenance produit un signal qualitatif et un score de vulnérabilité, pensés comme un élément d'appréciation en amont de la décision de crédit, pas comme une notation ou une probabilité de défaut. La calibration crédit reste une surcouche qualitative, à la main de vos équipes risque."],
+        ["Combien de temps prend une analyse ?", "L'analyse d'un site est instantanée. Un portefeuille entier peut être traité en un seul lot."],
+        ["Où sont hébergées les données ?", "Les données de la plateforme et de vos analyses sont hébergées en France."],
+        ["À qui s'adresse Greenance ?", "En priorité aux banques : analystes crédit, équipes ESG et conformité, directions des risques. Aussi aux gérants d'actifs, aux fonds d'investissement et aux gérants de SCPI/OPCI."],
+        ["Quel est le tarif ?", "Le tarif dépend de votre établissement et du périmètre couvert. Nous vous le présentons lors de la démo."]
       ]
     },
     en: {
@@ -337,20 +367,23 @@ class Component extends DCLogic {
       footColPlatform:"Platform", footColCompany:"Company", footAll:"All articles", footGlossary:"Glossary", 
       navPlatform:"Platform", navWhy:"Why Greenance", navAbout:"About", navMethod:"Methodology", navFaq:"FAQ", navResources:"Resources", demoCta:"Book a demo", pageTitle:"Greenance FAQ — Your Questions Answered",
       faqEyebrow:"FAQ", faqTitle:"Frequently asked questions",
-      demoTitle:"What your analysts will see tomorrow.", demoSub:"A 20-minute demo is enough to see how we can make your life easier.",
+      demoTitle:"See the analysis of a site of your choice.", demoSub:"In 20 minutes, we walk you through the report of a site you choose.",
       footTagline:"Nature risk at the site level.", footPlatform:"Platform", footMethod:"Methodology", footFaq:"FAQ", footResources:"Resources", footAbout:"About", footPrivacy:"Privacy policy", footLegal:"Legal notice", footCookies:"Manage cookies",
       footRights:"© 2026 Greenance SAS. All rights reserved.",
       qa: [
-        ["What is Greenance?","Greenance is a platform that assesses nature risk at the industrial site level, not at headquarters. From a company name, it identifies its assets, geolocates them, and produces a nature vulnerability score across three pillars: water, soil, biodiversity."],
-        ["How does asset geolocation work?","All it takes is the company name. Greenance automatically identifies its sites from public registries, financial filings, and corporate disclosures, with no manual entry of coordinates or addresses required."],
-        ["How is the score calculated?","Each score combines three factors: how dependent the sector of activity is on a given natural resource, the actual state of that resource at the site's precise location, and the level of adaptation already in place. The full method is explained on our Methodology page."],
-        ["What data do you use?","Dozens of public environmental datasets, already used by analysts in the sector today. Our difference isn't the data itself: it's the speed and consistency with which we apply it, across hundreds of sites at once."],
-        ["Is this aligned with regulatory frameworks (TNFD, ECB, EBA)?","Yes. The methodology is built on the TNFD/LEAP and ENCORE frameworks, and meets the supervisory expectations of the ECB and the Single Supervisory Mechanism on physical risk, as well as EBA/GL/2025/01."],
-        ["How is Greenance different from standard climate exposure tools?","Climate exposure tools measure how physical events (floods, heatwaves) impact an asset. Greenance measures something different: that asset's operational dependency on natural resources to function. These are two different causal directions, complementary rather than competing."],
-        ["Does Greenance provide a credit rating or a probability of default?","No. Greenance produces a qualitative signal and a vulnerability score, meant as an input ahead of the credit decision, not a rating or a probability of default. Credit calibration stays a qualitative overlay, in the hands of your risk teams."],
-        ["How long does an analysis take?","A few minutes, even for a portfolio of 150+ assets."],
-        ["Who is Greenance for?","Built first for commercial banks: credit analysts, ESG teams, risk directors. The platform also serves asset managers, insurers, SCPI/OPCI managers, and development banks."],
-        ["What does it cost?","Pricing depends on scope: number of assets, depth of analysis, frequency. The simplest way to get a number is to talk it through in a demo."]
+        ["What is Greenance?", "Greenance is a platform that assesses nature risk at the site level, not at headquarters. From a company name, it identifies its sites, geolocates them, and assesses water, soil, biodiversity and physical hazards for each one."],
+        ["How does site geolocation work?", "All it takes is the company name. Greenance automatically identifies its sites from public registries, financial filings and company sources, with no manual entry of coordinates or addresses. You can also import your own list of sites."],
+        ["How is the score calculated?", "Each score combines three elements: the activity's dependence on a natural resource, the actual state of that resource at the exact location of the site, and the level of adaptation already in place. Physical hazards are assessed separately, as a direct exposure of the site. The full detail is explained on our Methodology page."],
+        ["Does the AI calculate the score?", "No. The AI locates the sites and writes the analysis. The score is calculated by a deterministic, documented and reproducible method."],
+        ["What data do you use?", "30 public environmental data sources, already used today by analysts in the sector. Our difference is not the data itself, but the speed and consistency with which we apply it, across an entire portfolio."],
+        ["What happens when data is missing?", "No value is invented to replace it. The missing data is flagged and the report's confidence index drops accordingly."],
+        ["Is it aligned with regulatory frameworks (TNFD, ECB, EBA)?", "The methodology builds on TNFD/LEAP and was designed with the expectations of the ECB and EBA/GL/2025/01 in mind. These texts do not prescribe a calculation method: Greenance gives you a documented method that you can present to your supervisor."],
+        ["How does Greenance differ from climate exposure tools?", "Climate tools measure an asset's exposure to hazards. Greenance also assesses physical hazards, and adds what those tools do not see: the site's dependence on the resources its activity needs to operate."],
+        ["Does Greenance provide a credit rating or a probability of default?", "No. Greenance produces a qualitative signal and a vulnerability score, designed as an input to the assessment ahead of the credit decision, not as a rating or a probability of default. Credit calibration remains a qualitative overlay, in the hands of your risk teams."],
+        ["How long does an analysis take?", "The analysis of a site is instant. An entire portfolio can be processed in a single batch."],
+        ["Where is the data hosted?", "The platform's data and your analyses are hosted in France."],
+        ["Who is Greenance for?", "Banks first: credit analysts, ESG and compliance teams, risk management. Also asset managers, investment funds and SCPI/OPCI managers."],
+        ["What does it cost?", "Pricing depends on your institution and the scope covered. We present it to you during the demo."]
       ]
     }
   };
