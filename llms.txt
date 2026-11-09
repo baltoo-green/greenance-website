@@ -1,16 +1,31 @@
 # Greenance
 
-> AI-powered nature risk intelligence platform (water, soil, biodiversity) at the asset level, primarly for banks, but also asset managers, insurers, and any financial institutions.
+> Nature risk assessment platform for bank credit and risk teams. Greenance measures how each site of a borrower depends on water, soil, biodiversity and physical hazards, and delivers a sourced credit signal, ready for the credit committee.
 
-Greenance automatically identifies and geolocates a company's assets from its name alone, covering a portfolio of 150+ assets in a few minutes. Each site is cross-referenced against global environmental databases (WRI Aqueduct, SoilGrids, Natura 2000, IBAT, Natura 2000, KBA, Copernicus, USGS, GRESB, Open-Meteo) to produce a nature vulnerability score, tailored to the activity, across three pillars: water, soil, biodiversity.
+Greenance assesses nature risk at the site level, not at headquarters. From a company name, or from the bank's own list, it identifies and geolocates the company's physical sites (plants, warehouses, offices, farms), then assesses water, soil, biodiversity and physical hazards around each site, in light of what its activity depends on. The analysis of a site is instant, and an entire portfolio can be processed in a single batch.
 
-The methodology is built on the TNFD/LEAP and ENCORE frameworks, and aligns with CSRD and ECB/SSM supervisory expectations on physical risk (2026), as well as EBA/GL/2025/01.
+Each score combines three elements: the activity's dependence on a natural resource, the actual state of that resource at the exact location of the site, and the level of adaptation already in place. Physical hazards (flooding, ground movements) are assessed separately, as a direct exposure of the site. The site's risk level is set by its most critical pillar: a degraded pillar is never diluted in the average of the others.
 
-Built first for commercial banks (credit analysts, ESG teams, risk and compliance directors), Greenance also serves asset managers, insurers, SCPI/OPCI managers, and development banks.
+The score is calculated by a deterministic, documented and reproducible method. AI is used only to locate the sites and to write the analysis; it never calculates the score. Greenance cross-references 30 public environmental data sources (such as WRI Aqueduct, SoilGrids, Natura 2000, IBAT, KBA, Copernicus, USGS and Open-Meteo). Every score is linked to its source and its method. When data is missing, no value is invented: the gap is flagged and the report's confidence index drops accordingly.
+
+Each report, per site and per company, gives the risk level and the pillar driving it, a written analysis, the key questions to raise with the borrower and options for support plans. Greenance is an input to the credit assessment, not a credit rating or a probability of default.
+
+The methodology builds on TNFD/LEAP and ENCORE, and was designed with the expectations of the ECB and of EBA/GL/2025/01 in mind. It was built with more than 70 banking professionals consulted. Data is hosted in France.
+
+Built first for banks (credit analysts, risk management, ESG and compliance teams), Greenance is also available to asset managers, investment funds and SCPI/OPCI managers.
+
+## Key pages
+- [The Solution](https://greenance.fr/solution.html): what the platform does and what a report contains
+- [Methodology](https://greenance.fr/methodologie.html): how the score and the risk signal are built
+- [FAQ](https://greenance.fr/faq.html): questions about data, AI, regulation and pricing
+- [Glossary](https://greenance.fr/glossaire.html): TNFD, LEAP, ENCORE, materiality, physical and transition risk
 
 ## Research
-- [Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit](https://greenance.fr/barometre-2026-risques-nature-analyse-credit.html): exploratory survey by Greenance × Junior ESSEC of 81 professionals (banking, other financial activities, consulting), July-October 2026, on reported practices, tools, obstacles and expected formats for nature-related risks in credit analysis. Non-probability sample; figures describe respondents, not banks. Full report, summary and key figures (PowerPoint, PDF) are free to download, in French.
+- [Baromètre 2026 : la place pour les risques liés à la nature dans l'analyse crédit](https://greenance.fr/barometre-2026-risques-nature-analyse-credit.html): exploratory survey by Greenance × Junior ESSEC of 81 professionals (banking, other financial activities, consulting), July-October 2026, on reported practices, tools, obstacles and expected formats for nature-related risks in credit analysis. Non-probability sample; figures describe respondents, not banks. The full report, the summary and the key figures (PowerPoint, PDF) are free to download, in French.
+- [ECB 2026 regulation: nature risk and banking supervision](https://greenance.fr/reglementation-bce-2026.html)
+- [TNFD and LEAP: the reference framework for nature risk](https://greenance.fr/tnfd-leap.html)
+- [ENCORE: the database behind sector-level nature risk scoring](https://greenance.fr/encore.html)
 
 ## Contact
-Balthazar Courtois, CEO & Co-founder — balthazar.courtois@greenance.fr
+Balthazar Courtois, CEO and co-founder: balthazar.courtois@greenance.fr
 Website: https://greenance.fr
